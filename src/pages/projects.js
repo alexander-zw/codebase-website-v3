@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const Projects = ({ location }) => {
   console.log(location)
   return (
-    <Layout>
+    <Layout pathname={location.pathname}>
       <SEO title="About" />
       <h1>Projects</h1>
     </Layout>
