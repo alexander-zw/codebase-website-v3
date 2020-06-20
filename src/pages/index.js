@@ -1,21 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
+import monkey from "../images/ikea_monkey@2x.png"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hello people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    {/* <Link to="/about/">Go to about page</Link> <br />
-    <Link to="/projects/">Go to projects page</Link> <br />
-    <Link to="/contact/">Go to contact page</Link> <br />
-    <Link to="/apply/">Go to apply page</Link> <br /> */}
-  </Layout>
-)
+const IndexPage = ({ location }) => {
+  console.log(location)
+  return (
+    <Layout pathname={location.pathname}>
+      <SEO title="Home" />
+      <h1>Hi</h1>
+      <img src={monkey} alt="monkey"></img>
+    </Layout>
+  )
+}
 
 export default IndexPage

@@ -1,15 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const About = () => (
-  <Layout>
-    <SEO title="About" />
-    <h1>About</h1>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+const About = ({ location }) => {
+  console.log(location)
+  return (
+    <Layout pathname={location.pathname}>
+      <SEO title="About" />
+      <h1>About</h1>
+    </Layout>
+  )
+}
 
 export default About

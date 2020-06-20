@@ -1,14 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import NavLink from "./nav-link"
+import blueLogo from "../images/cb-logo-blue.png"
+import whiteLogo from "../images/cb-logo-white.png"
 
-const Header = ({ siteTitle, menuLinks }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+const pickLogo = pathname =>
+  pathname === "/contact" ? (
+    <img src={blueLogo} alt="Logo" />
+  ) : (
+    <img src={whiteLogo} alt="Logo" />
+  )
+
+const Header = ({ menuLinks, pathname }) => (
+  <header>
     <div
       style={{
         margin: `0 auto`,
@@ -16,36 +21,30 @@ const Header = ({ siteTitle, menuLinks }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <div>
-        <nav>
-          <ul style={{ display: "flex", flex: 1 }}>
-            {menuLinks.map(link => (
-              <li
-                key={link.name}
-                style={{
-                  listStyleType: `none`,
-                  padding: `1rem`,
-                }}
-              >
-                <Link style={{ color: `white` }} to={link.link}>
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul style={{ display: "flex", flex: 1 }}>
+          {menuLinks.map(link => {
+            console.log(link)
+            if (link.name === "Home") {
+              return (
+                <NavLink
+                  link={link.link}
+                  linkId={link.id + "-link"}
+                  children={pickLogo(pathname)}
+                />
+              )
+            } else {
+              return (
+                <NavLink
+                  link={link.link}
+                  linkId={link.id + "-link"}
+                  children={link.name}
+                />
+              )
+            }
+          })}
+        </ul>
+      </nav>
     </div>
   </header>
 )
