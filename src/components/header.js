@@ -1,18 +1,22 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import NavLink from "./nav-link"
 import blueLogo from "../images/cb-logo-blue.png"
 import whiteLogo from "../images/cb-logo-white.png"
 
-const pickLogo = pathname =>
-  pathname === "/contact" ? (
-    <img src={blueLogo} alt="Logo" />
-  ) : (
-    <img src={whiteLogo} alt="Logo" />
-  )
+const pickChild = (name, curPath) => {
+  if (name === "Home") {
+    return curPath === "/contact" ? (
+      <img src={blueLogo} alt="Logo" />
+    ) : (
+      <img src={whiteLogo} alt="Logo" />
+    )
+  } else {
+    return name
+  }
+}
 
-const Header = ({ menuLinks, pathname }) => (
+const Header = ({ menuLinks, curPath }) => (
   <header>
     <div
       style={{
@@ -24,24 +28,13 @@ const Header = ({ menuLinks, pathname }) => (
       <nav>
         <ul style={{ display: "flex", flex: 1 }}>
           {menuLinks.map(link => {
-            console.log(link)
-            if (link.name === "Home") {
-              return (
-                <NavLink
-                  link={link.link}
-                  linkId={link.id + "-link"}
-                  children={pickLogo(pathname)}
-                />
-              )
-            } else {
-              return (
-                <NavLink
-                  link={link.link}
-                  linkId={link.id + "-link"}
-                  children={link.name}
-                />
-              )
-            }
+            return (
+              <NavLink
+                link={link.link}
+                linkId={link.id + "-link"}
+                children={pickChild(link.name, curPath)}
+              />
+            )
           })}
         </ul>
       </nav>

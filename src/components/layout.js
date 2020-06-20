@@ -12,8 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children, pathname }) => {
-  console.log(pathname)
+const Layout = ({ children, curPath }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,11 +29,8 @@ const Layout = ({ children, pathname }) => {
   `)
 
   return (
-    <div className={pathname === "/contact" ? "alt-body" : "default-body"}>
-      <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
-        pathname={pathname}
-      />
+    <div className={curPath === "/contact" ? "alt-body" : "default-body"}>
+      <Header menuLinks={data.site.siteMetadata.menuLinks} curPath={curPath} />
       <div
         style={{
           margin: `0 auto`,

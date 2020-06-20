@@ -6,7 +6,7 @@ import monkey from "../images/ikea_monkey@2x.png"
 const IndexPage = ({ location }) => {
   console.log(location)
   return (
-    <Layout pathname={location.pathname}>
+    <Layout curPath={location.pathname}>
       <SEO title="Home" />
       <h1>Hi</h1>
       <img src={monkey} alt="monkey"></img>
