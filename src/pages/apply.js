@@ -3,13 +3,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Theme from "../constants"
 
-const IndexPage = ({ location }) => {
+const ApplyPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
-      <SEO title="Home" />
-      <h1>Hi</h1>
+      <SEO title="About" />
+      <h1>Apply</h1>
     </Layout>
   )
 }
 
-export default IndexPage
+export default ApplyPage
