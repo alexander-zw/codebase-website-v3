@@ -13,13 +13,7 @@ const NavLink = ({ link, theme, children }) => {
         </a>
       ) : (
         <Link
-          className={`link ${
-            link.action
-              ? theme === Theme.LIGHT
-                ? "action-link-light"
-                : "action-link-default"
-              : ""
-          }`}
+          className={`link ${getLinkClass(link, theme)}`}
           to={link.link}
           activeClassName="active-link"
         >
@@ -28,6 +22,13 @@ const NavLink = ({ link, theme, children }) => {
       )}
     </li>
   )
+}
+
+const getLinkClass = (link, theme) => {
+  if (link.action) {
+    return theme === Theme.LIGHT ? "action-link-light" : "action-link-default"
+  }
+  return ""
 }
 
 export default NavLink

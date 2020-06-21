@@ -8,49 +8,25 @@ import blueLogo from "../../images/cb-logo-blue.png"
 import whiteLogo from "../../images/cb-logo-white.png"
 import "../../styles/nav-components.css"
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props)
-    this.getLogo = this.getLogo.bind(this)
-  }
-
-  getLogo(theme) {
-    let logo
-    switch (theme) {
-      case Theme.LIGHT:
-        logo = blueLogo
-        break
-      default:
-        logo = whiteLogo
-        break
-    }
-    return <img src={logo} alt="Logo" className="nav-logo" />
-  }
-
-  render() {
-    return (
-      <header>
-        <div
-          className={`nav-container ${
-            this.props.theme === Theme.LIGHT ? "bg-light" : "bg-default"
-          }`}
-        >
-          <nav>
-            <ul className="link-ul">
-              <Link to="/">{this.getLogo(this.props.theme)}</Link>
-              {this.props.menuLinks.map(link => {
-                return (
-                  <NavLink key={link.name} link={link} theme={this.props.theme}>
-                    {link.name}
-                  </NavLink>
-                )
-              })}
-            </ul>
-          </nav>
-        </div>
-      </header>
-    )
-  }
+const NavBar = ({ menuLinks, theme }) => {
+  return (
+    <header>
+      <div className={`nav-container ${getBackground(theme)}`}>
+        <nav>
+          <ul className="link-ul">
+            <Link to="/">{getLogo(theme)}</Link>
+            {menuLinks.map(link => {
+              return (
+                <NavLink key={link.name} link={link} theme={theme}>
+                  {link.name}
+                </NavLink>
+              )
+            })}
+          </ul>
+        </nav>
+      </div>
+    </header>
+  )
 }
 
 NavBar.propTypes = {
@@ -59,6 +35,15 @@ NavBar.propTypes = {
 
 NavBar.defaultProps = {
   theme: Theme.DEFAULT,
+}
+
+const getLogo = theme => {
+  const logo = theme === Theme.LIGHT ? blueLogo : whiteLogo
+  return <img src={logo} alt="Logo" className="nav-logo" />
+}
+
+const getBackground = theme => {
+  return theme === Theme.LIGHT ? "bg-light" : "bg-default"
 }
 
 export default NavBar
