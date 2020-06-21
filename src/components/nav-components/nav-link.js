@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../../styles/nav-components.css"
 import Theme from "../../constants"
+import "../../styles/nav-components.css"
 
 const NavLink = ({ link, theme, children }) => {
   return (

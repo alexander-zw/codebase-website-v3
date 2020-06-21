@@ -1,56 +1,60 @@
-.action-link-default {
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+.cb-logo {
+  max-width: 150px;
+}
+
+.cb-navbar {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-family: "Circular Std Book", sans-serif;
+}
+
+.cb-bg-default {
+  background-color: #336ee2;
+}
+
+.cb-bg-light {
+  background-color: #ffffff;
+}
+
+.cb-active-link {
+  color: red;
+}
+
+.cb-link-default {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+.cb-link-light {
+  text-decoration: none !important;
+  color: #336ee2 !important;
+}
+
+.cb-item {
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center !important;
+}
+
+.cb-action-link-light {
+  background-color: rgba(51, 110, 226, 0.2) !important;
+  border-radius: 3px;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.cb-action-link-default {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.action-link-light {
-  background-color: rgba(51, 110, 226, 0.2);
-  border-radius: 3px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.bg-default {
-  background-color: #336ee2;
-  color: white;
-}
-
-.bg-light {
-  background-color: white;
-  color: #336ee2;
-}
-
-.nav-container {
-  margin: 0;
-  padding: 1.45rem 1.0875rem;
-}
-
-.nav-logo {
-  width: 100%;
-  max-width: 200px;
-}
-
-.link-ul {
-  display: flex;
-  flex: 1;
-}
-
-.link-li {
-  list-style-type: none;
-  padding: 1rem;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.active-link {
-  color: red;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  margin-right: 0px;
+  margin-left: 0px;
 }
