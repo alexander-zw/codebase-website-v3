@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
-import NavBar from "./nav-components/nav-bar"
+import NavBar from "./nav-bar"
 import Footer from "./footer"
 import "../styles/layout.css"
 
