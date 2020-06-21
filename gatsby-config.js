@@ -1,37 +1,38 @@
 module.exports = {
   siteMetadata: {
-    title: `codebase`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Codebase`,
+    description: `Codebase is a UC Berkeley student organization that builds software projects for high growth tech companies.`,
     author: `@codebase-berkeley`,
     menuLinks: [
       {
-        name: `Home`,
-        link: `/`,
-        id: `home`,
-      },
-      {
         name: `About`,
         link: `/about`,
-        id: `about`,
+        external: false,
+        action: false,
       },
       {
         name: `Projects`,
         link: `/projects`,
-        id: `projects`,
+        external: false,
+        action: false,
       },
-      // {
-      //   name: `Blog`,
-      //   link: `/blog`,
-      // },
+      {
+        name: `Blog`,
+        link: `https://medium.com/berkeley-codebase`,
+        external: true,
+        action: false,
+      },
       {
         name: `Contact Us`,
         link: `/contact`,
-        id: `contact`,
+        external: false,
+        action: false,
       },
       {
         name: `Apply`,
         link: `/apply`,
-        id: `apply`,
+        external: false,
+        action: true,
       },
     ],
   },

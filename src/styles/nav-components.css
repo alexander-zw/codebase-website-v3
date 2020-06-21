@@ -1,0 +1,56 @@
+.action-link-default {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.action-link-light {
+  background-color: rgba(51, 110, 226, 0.2);
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bg-default {
+  background-color: #336ee2;
+  color: white;
+}
+
+.bg-light {
+  background-color: white;
+  color: #336ee2;
+}
+
+.nav-container {
+  margin: 0;
+  padding: 1.45rem 1.0875rem;
+}
+
+.nav-logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+.link-ul {
+  display: flex;
+  flex: 1;
+}
+
+.link-li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-link {
+  color: red;
+}

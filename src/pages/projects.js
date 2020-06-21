@@ -1,15 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Theme from "../constants"
 
-const Projects = ({ location }) => {
-  console.log(location)
+const ProjectsPage = ({ location }) => {
   return (
-    <Layout curPath={location.pathname}>
-      <SEO title="About" />
+    <Layout theme={Theme.DEFAULT}>
+      <SEO title="Projects" />
       <h1>Projects</h1>
     </Layout>
   )
 }
 
-export default Projects
+export default ProjectsPage

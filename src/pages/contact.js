@@ -1,15 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Theme from "../constants"
 
-const Contact = ({ location }) => {
-  console.log(location)
+const ContactPage = ({ location }) => {
   return (
-    <Layout curPath={location.pathname}>
-      <SEO title="About" />
+    <Layout theme={Theme.LIGHT}>
+      <SEO title="Contact" />
       <h1>Contact</h1>
     </Layout>
   )
 }
 
-export default Contact
+export default ContactPage

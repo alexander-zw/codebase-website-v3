@@ -9,10 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import NavBar from "./nav-components/nav-bar"
+import Footer from "./footer"
+import "../styles/layout.css"
 
-const Layout = ({ children, curPath }) => {
+const Layout = ({ children, theme }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,7 +22,8 @@ const Layout = ({ children, curPath }) => {
           menuLinks {
             name
             link
-            id
+            external
+            action
           }
         }
       }
@@ -29,22 +31,12 @@ const Layout = ({ children, curPath }) => {
   `)
 
   return (
-    <div className={curPath === "/contact" ? "alt-body" : "default-body"}>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} curPath={curPath} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+    <div>
+      <NavBar menuLinks={data.site.siteMetadata.menuLinks} theme={theme} />
+      <div>
         <main>{children}</main>
-        <footer>
-          {/* © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> */}
-        </footer>
       </div>
+      <Footer />
     </div>
   )
 }

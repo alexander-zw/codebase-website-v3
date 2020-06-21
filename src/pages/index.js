@@ -1,15 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import monkey from "../images/ikea_monkey@2x.png"
+import Theme from "../constants"
 
 const IndexPage = ({ location }) => {
-  console.log(location)
   return (
-    <Layout curPath={location.pathname}>
+    <Layout theme={Theme.DEFAULT}>
       <SEO title="Home" />
       <h1>Hi</h1>
-      <img src={monkey} alt="monkey"></img>
     </Layout>
   )
 }
