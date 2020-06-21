@@ -1,22 +1,54 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Theme from "../../constants"
-import blueLogo from "../../images/cb-logo-blue.png"
-import whiteLogo from "../../images/cb-logo-white.png"
 
 import { Navbar, Nav } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../../styles/nav-components.css"
 
 const NavBar = ({ theme }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      blueLogo: file(relativePath: { eq: "cb-logo-blue.png" }) {
+        childImageSharp {
+          fixed(width: 150, height: 37) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      whiteLogo: file(relativePath: { eq: "cb-logo-white.png" }) {
+        childImageSharp {
+          fixed(width: 150, height: 37) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <header>
       <Navbar className={`cb-navbar ${getBackgroundClass(theme)}`} expand="lg">
         <div className="container">
           <Navbar.Brand>
-            <Link to="/">{getLogo(theme)}</Link>
+            <Link to="/">
+              {theme === Theme.LIGHT ? (
+                <Img
+                  fixed={data.blueLogo.childImageSharp.fixed}
+                  fadeIn={false}
+                  loading="eager"
+                />
+              ) : (
+                <Img
+                  fixed={data.whiteLogo.childImageSharp.fixed}
+                  fadeIn={false}
+                  loading="eager"
+                />
+              )}
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="cb-navbar-nav" />
           <Navbar.Collapse id="cb-navbar-nav">
@@ -74,11 +106,6 @@ NavBar.propTypes = {
 
 NavBar.defaultProps = {
   theme: Theme.DEFAULT,
-}
-
-const getLogo = theme => {
-  const logo = theme === Theme.LIGHT ? blueLogo : whiteLogo
-  return <img src={logo} alt="Logo" className="cb-logo" />
 }
 
 const getBackgroundClass = theme => {
