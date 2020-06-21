@@ -19,12 +19,6 @@ const Layout = ({ children, theme }) => {
       site {
         siteMetadata {
           title
-          menuLinks {
-            name
-            link
-            external
-            action
-          }
         }
       }
     }
@@ -32,7 +26,7 @@ const Layout = ({ children, theme }) => {
 
   return (
     <div>
-      <NavBar menuLinks={data.site.siteMetadata.menuLinks} theme={theme} />
+      <NavBar theme={theme} />
       <div>
         <main>{children}</main>
       </div>
