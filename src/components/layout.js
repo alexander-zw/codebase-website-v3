@@ -7,32 +7,26 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
-import NavBar from "./nav-components/nav-bar"
+import NavBar from "./nav-bar"
 import Footer from "./footer"
 import "../styles/layout.css"
 
 const Layout = ({ children, theme }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          menuLinks {
-            name
-            link
-            external
-            action
-          }
-        }
-      }
-    }
-  `)
+  //   const data = useStaticQuery(graphql`
+  //     query SiteTitleQuery {
+  //       site {
+  //         siteMetadata {
+  //           title
+  //         }
+  //       }
+  //     }
+  //   `)
 
   return (
     <div>
-      <NavBar menuLinks={data.site.siteMetadata.menuLinks} theme={theme} />
+      <NavBar theme={theme} />
       <div>
         <main>{children}</main>
       </div>

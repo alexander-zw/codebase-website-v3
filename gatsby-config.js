@@ -3,38 +3,6 @@ module.exports = {
     title: `Codebase`,
     description: `Codebase is a UC Berkeley student organization that builds software projects for high growth tech companies.`,
     author: `@codebase-berkeley`,
-    menuLinks: [
-      {
-        name: `About`,
-        link: `/about`,
-        external: false,
-        action: false,
-      },
-      {
-        name: `Projects`,
-        link: `/projects`,
-        external: false,
-        action: false,
-      },
-      {
-        name: `Blog`,
-        link: `https://medium.com/berkeley-codebase`,
-        external: true,
-        action: false,
-      },
-      {
-        name: `Contact Us`,
-        link: `/contact`,
-        external: false,
-        action: false,
-      },
-      {
-        name: `Apply`,
-        link: `/apply`,
-        external: false,
-        action: true,
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
