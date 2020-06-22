@@ -6,7 +6,7 @@ import Theme from "../constants"
 const ApplyPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
-      <SEO title="About" />
+      <SEO title="Apply" />
       <h1>Apply</h1>
     </Layout>
   )
