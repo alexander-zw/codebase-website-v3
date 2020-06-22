@@ -8,7 +8,7 @@
 }
 
 .cb-navbar {
-  padding-top: 20px !important;
+  padding-top: 10px !important;
   padding-bottom: 20px !important;
   font-family: "Circular Std Book", sans-serif;
 }
@@ -21,18 +21,82 @@
   background-color: #ffffff;
 }
 
-.cb-active-link {
-  color: red;
+.cb-active-link-default::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  visibility: visible !important;
+  transform: scaleX(1) !important;
+}
+
+.cb-active-link-light::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #336ee2 !important;
+  visibility: visible !important;
+  transform: scaleX(1) !important;
 }
 
 .cb-link-default {
+  position: relative;
   text-decoration: none !important;
   color: #ffffff !important;
 }
 
+.cb-hover-link-default::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+}
+
+.cb-hover-link-default:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .cb-link-light {
+  position: relative;
   text-decoration: none !important;
   color: #336ee2 !important;
+}
+
+.cb-hover-link-light::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #336ee2;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+}
+
+.cb-hover-link-light:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .cb-item {
@@ -42,7 +106,7 @@
 }
 
 .cb-action-link-light {
-  background-color: rgba(51, 110, 226, 0.2) !important;
+  background-color: rgba(51, 110, 226, 0.2);
   border-radius: 3px;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
@@ -57,4 +121,28 @@
   padding-right: 2rem !important;
   margin-right: 0px;
   margin-left: 0px;
+}
+
+.nav-link {
+  margin-top: 10px;
+}
+
+.navbar-brand {
+  margin-top: 15px;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
 }

@@ -54,29 +54,36 @@ const NavBar = ({ theme }) => {
           <Navbar.Collapse id="cb-navbar-nav">
             <Nav className="ml-auto mr-auto">
               <Nav.Item className="cb-item">
-                <Link className={`nav-link ${getLinkClass(theme)}`} to="/about">
+                <Link
+                  className={`nav-link ${getLinkClass(theme)}`}
+                  activeClassName={getActiveLinkClass(theme)}
+                  to="/about"
+                >
                   About
                 </Link>
               </Nav.Item>
               <Nav.Item className="cb-item">
                 <Link
                   className={`nav-link ${getLinkClass(theme)}`}
+                  activeClassName={getActiveLinkClass(theme)}
                   to="/projects"
                 >
                   Projects
                 </Link>
               </Nav.Item>
               <Nav.Item className="cb-item">
-                <Nav.Link
+                <a
+                  className={`nav-link ${getLinkClass(theme)}`}
                   href="https://medium.com/berkeley-codebase"
                   target="_source"
                 >
-                  <span className={`${getLinkClass(theme)}`}>Blog</span>
-                </Nav.Link>
+                  Blog
+                </a>
               </Nav.Item>
               <Nav.Item className="cb-item">
                 <Link
                   className={`nav-link ${getLinkClass(theme)}`}
+                  activeClassName={getActiveLinkClass(theme)}
                   to="/contact"
                 >
                   Contact Us
@@ -118,8 +125,16 @@ const getLinkClass = (theme, action = false) => {
       ? "cb-link-light cb-action-link-light"
       : "cb-link-default cb-action-link-default"
   } else {
-    return theme === Theme.LIGHT ? "cb-link-light" : "cb-link-default"
+    return theme === Theme.LIGHT
+      ? "cb-link-light cb-hover-link-light"
+      : "cb-link-default cb-hover-link-default"
   }
+}
+
+const getActiveLinkClass = theme => {
+  return theme === Theme.LIGHT
+    ? "cb-active-link-light"
+    : "cb-active-link-default"
 }
 
 export default NavBar
