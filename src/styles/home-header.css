@@ -62,6 +62,7 @@
 .cb-home-header-button-row {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .cb-home-header-row {
