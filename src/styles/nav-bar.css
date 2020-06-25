@@ -8,10 +8,10 @@
 }
 
 .cb-navbar {
-  padding-top: 10px !important;
+  padding-top: 0px !important;
   padding-bottom: 20px !important;
   font-family: "Circular Std Book", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .cb-bg-default {

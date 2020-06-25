@@ -4,15 +4,15 @@
 }
 
 .cb-home-header-title {
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Circular Std Book", sans-serif;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
 .cb-home-header-subtitle {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Circular Std Book", sans-serif;
   color: #ffffff;
 }
@@ -21,8 +21,50 @@
   width: 100%;
 }
 
+.cb-home-header-button {
+  border-radius: 3px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 14px;
+  margin-left: 0px;
+  margin-bottom: 14px;
+  font-family: "Circular Std Book", sans-serif;
+}
+
+.cb-home-header-button:hover {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+}
+
+.cb-home-header-apply {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.cb-home-header-about {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 2px;
+  border-style: solid;
+  color: #ffffff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.cb-home-header-button-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .cb-home-header-row {
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .cb-home-header-bg {
@@ -32,10 +74,26 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .cb-home-header-row {
-    padding-top: 0vh;
+  .cb-home-header-bg {
+    padding-bottom: 10vh;
   }
 
+  .cb-home-header-title {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .cb-home-header-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-home-header-title {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .cb-home-header-bg {
     padding-bottom: 10vh;
   }
@@ -45,44 +103,12 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .cb-home-header-row {
-    padding-top: 10vh;
-  }
-
-  .cb-home-header-bg {
-    padding-bottom: 10vh;
-  }
-
-  .cb-home-header-title {
-    margin-top: 10%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cb-home-header-row {
-    padding-top: 10vh;
-  }
-
-  .cb-home-header-bg {
-    padding-bottom: 10vh;
-  }
-
-  .cb-home-header-title {
-    margin-top: 20%;
-  }
-}
-
 @media only screen and (min-width: 992px) {
-  .cb-home-header-row {
-    padding-top: 10vh;
-  }
-
   .cb-home-header-bg {
     padding-bottom: 15vh;
   }
 
   .cb-home-header-title {
-    margin-top: 40%;
+    margin-top: 20%;
   }
 }
