@@ -26,6 +26,7 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const tabTitle = title === "Home" ? "Codebase" : title + " | Codebase"
 
   return (
     <Helmet
@@ -33,7 +34,7 @@ const SEO = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={tabTitle}
       meta={[
         {
           name: `description`,

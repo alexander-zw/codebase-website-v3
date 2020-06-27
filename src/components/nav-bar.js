@@ -31,9 +31,12 @@ const NavBar = ({ theme }) => {
 
   return (
     <header>
-      <Navbar className={`cb-navbar ${getBackgroundClass(theme)}`} expand="lg">
+      <Navbar
+        className={`cb-nav-bar-navbar ${getBackgroundClass(theme)}`}
+        expand="lg"
+      >
         <div className="container">
-          <Navbar.Brand>
+          <Navbar.Brand className="cb-nav-bar-navbar-brand">
             <Link to="/">
               {theme === Theme.LIGHT ? (
                 <Img
@@ -50,33 +53,48 @@ const NavBar = ({ theme }) => {
               )}
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="cb-navbar-nav" />
-          <Navbar.Collapse id="cb-navbar-nav">
+          <Navbar.Toggle aria-controls="cb-nav-bar-navbar-nav" />
+          <Navbar.Collapse id="cb-nav-bar-navbar-nav">
             <Nav className="ml-auto mr-auto">
-              <Nav.Item className="cb-item">
-                <Link className={`nav-link ${getLinkClass(theme)}`} to="/about">
+              <Nav.Item className="cb-nav-bar-item">
+                <Link
+                  className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
+                    theme
+                  )}`}
+                  activeClassName={getActiveLinkClass(theme)}
+                  to="/about"
+                >
                   About
                 </Link>
               </Nav.Item>
-              <Nav.Item className="cb-item">
+              <Nav.Item className="cb-nav-bar-item">
                 <Link
-                  className={`nav-link ${getLinkClass(theme)}`}
+                  className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
+                    theme
+                  )}`}
+                  activeClassName={getActiveLinkClass(theme)}
                   to="/projects"
                 >
                   Projects
                 </Link>
               </Nav.Item>
-              <Nav.Item className="cb-item">
-                <Nav.Link
+              <Nav.Item className="cb-nav-bar-item">
+                <a
+                  className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
+                    theme
+                  )}`}
                   href="https://medium.com/berkeley-codebase"
                   target="_source"
                 >
-                  <span className={`${getLinkClass(theme)}`}>Blog</span>
-                </Nav.Link>
+                  Blog
+                </a>
               </Nav.Item>
-              <Nav.Item className="cb-item">
+              <Nav.Item className="cb-nav-bar-item">
                 <Link
-                  className={`nav-link ${getLinkClass(theme)}`}
+                  className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
+                    theme
+                  )}`}
+                  activeClassName={getActiveLinkClass(theme)}
                   to="/contact"
                 >
                   Contact Us
@@ -84,9 +102,12 @@ const NavBar = ({ theme }) => {
               </Nav.Item>
             </Nav>
             <Nav>
-              <Nav.Item className="cb-item">
+              <Nav.Item className="cb-nav-bar-item">
                 <Link
-                  className={`nav-link ${getLinkClass(theme, true)}`}
+                  className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
+                    theme,
+                    true
+                  )}`}
                   to="/apply"
                 >
                   Apply
@@ -109,17 +130,25 @@ NavBar.defaultProps = {
 }
 
 const getBackgroundClass = theme => {
-  return theme === Theme.LIGHT ? "cb-bg-light" : "cb-bg-default"
+  return theme === Theme.LIGHT ? "cb-nav-bar-bg-light" : "cb-nav-bar-bg-default"
 }
 
 const getLinkClass = (theme, action = false) => {
   if (action) {
     return theme === Theme.LIGHT
-      ? "cb-link-light cb-action-link-light"
-      : "cb-link-default cb-action-link-default"
+      ? "cb-nav-bar-link-light cb-nav-bar-action-link-light"
+      : "cb-nav-bar-link-default cb-nav-bar-action-link-default"
   } else {
-    return theme === Theme.LIGHT ? "cb-link-light" : "cb-link-default"
+    return theme === Theme.LIGHT
+      ? "cb-nav-bar-link-light cb-nav-bar-hover-link-light"
+      : "cb-nav-bar-link-default cb-nav-bar-hover-link-default"
   }
+}
+
+const getActiveLinkClass = theme => {
+  return theme === Theme.LIGHT
+    ? "cb-active-link-light"
+    : "cb-active-link-default"
 }
 
 export default NavBar
