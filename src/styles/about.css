@@ -1,0 +1,21 @@
+.member-container {
+  background: rgba(193, 200, 209, 0.15);
+  padding: 50px;
+}
+
+.member-group {
+  justify-content: center;
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member-container h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 15px;
+}

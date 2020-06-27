@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  width: 12vw;
+  height: 12vw;
+}
+
+.image {
+  display: block;
+  border-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.title {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  text-align: center;
+}
+
+.name {
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 68%;
+  left: 10%;
+  text-align: center;
+}
+
+.member {
+  display: flex;
+  width: 12vw;
+  height: 12vw;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 15px;
+}
