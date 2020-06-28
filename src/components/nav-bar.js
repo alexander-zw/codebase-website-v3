@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Theme from "../constants"
+import { Theme } from "../constants"
 
 import { Navbar, Nav } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
