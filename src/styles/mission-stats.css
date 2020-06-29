@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+.cb-mission-stats-title {
+  font-size: 13px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #80868B;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+.cb-mission-stats-description {
+  font-size: 24px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #2F2F30;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.cb-mission-stats-more {
+  font-size: 14px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #F77D73;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.cb-mission-stats-end {
+  text-align: center;
+}
+
+.cb-mission-stats-m {
+  width: 60%;
+  text-align: center;
+  padding-bottom: 15vh;
+}
+
+.cb-mission-stats-s {
+  width: 80%;
+  text-align: center;
+}
+
+.cb-mission-stats-bg {
+  background-color: white;
+  width: 100%;
+  padding-bottom: 15vh;
+}
+
+@media only screen and (max-width: 479px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 15vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+}
