@@ -6,6 +6,7 @@ import BaseBehaviorsImages from "./base-behaviors-images"
 import { BaseBehavior } from "../../../constants"
 import BaseBehaviorsDescriptions from "./base-behaviors-descriptions"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
+import BaseBehaviorsClub from "./base-behaviors-club"
 
 class BaseBehaviors extends React.Component {
   bbList = [
@@ -49,7 +50,7 @@ class BaseBehaviors extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container cb-bb-container">
         <div className="row cb-bb-main-row">
           <div className="col-md-6">
             <h1 className="cb-bb-title">OUR BASE BEHAVIORS</h1>
@@ -141,6 +142,11 @@ class BaseBehaviors extends React.Component {
           >
             <div className="cb-bb-number">05&#13;&#10;</div>
             <div className="cb-bb-text">Genuinely Give Back</div>
+          </div>
+        </div>
+        <div className="row cb-bb-image-row">
+          <div className="col-md-12">
+            <BaseBehaviorsClub />
           </div>
         </div>
       </div>
