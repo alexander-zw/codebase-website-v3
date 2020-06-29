@@ -147,8 +147,8 @@ const getLinkClass = (theme, action = false) => {
 
 const getActiveLinkClass = theme => {
   return theme === Theme.LIGHT
-    ? "cb-active-link-light"
-    : "cb-active-link-default"
+    ? "cb-nav-bar-active-link-light"
+    : "cb-nav-bar-active-link-default"
 }
 
 export default NavBar
