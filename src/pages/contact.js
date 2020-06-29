@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Theme from "../constants"
+import { Theme } from "../constants"
 
 const ContactPage = ({ location }) => {
   return (

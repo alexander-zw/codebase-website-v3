@@ -3,4 +3,12 @@ const Theme = Object.freeze({
   LIGHT: 1,
 })
 
-export default Theme
+const BaseBehavior = Object.freeze({
+  OWNERSHIP: 0,
+  COMMUNICATE: 1,
+  GIVE: 2,
+  PEOPLE: 3,
+  GROWTH: 4,
+})
+
+export { Theme, BaseBehavior }
