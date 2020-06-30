@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+.cb-home-projects {
+  font-family: "Circular Std Book", sans-serif;
+  font-weight: 450;
+  max-width: 750px;
+}
+
+.cb-home-projects-title {
+  color: #80868b;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 5%;
+}
+
+.cb-orange-link {
+  color: #f77b6f;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+.cb-project-card {
+  width: 360px;
+  height: 180px;
+}
+
+.cb-project-logo {
+  height: 18px;
+  border-radius: 3px;
+}
+
+.cb-project-text {
+  max-width: 300px;
+  font-family: "Circular Std Book", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  color: #80868b;
+}
+
+.cb-project-type {
+  color: #2f2f30;
+}

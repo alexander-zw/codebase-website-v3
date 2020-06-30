@@ -1,0 +1,15 @@
+.cb-projects-section {
+  max-width: 600px;
+}
+
+.cb-projects-section-title {
+  color: #2f2f30;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.cb-projects-section-blurb {
+  color: #80868b;
+  font-size: 14px;
+  line-height: 18px;
+}
