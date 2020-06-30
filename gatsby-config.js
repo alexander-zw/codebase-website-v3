@@ -27,6 +27,19 @@ module.exports = {
         icon: `src/images/cb-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-airtable",
+      options: {
+        apiKey: process.env.API_KEY,
+        tables: [
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Projects",
+            tableView: "Current",
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
