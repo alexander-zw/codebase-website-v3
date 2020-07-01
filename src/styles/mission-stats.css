@@ -13,7 +13,12 @@
 }
 
 .cb-mission {
-  width: 673px;
+  width: 60%;
+  margin: auto;
+}
+
+.cb-stats {
+  width: 70%;
   margin: auto;
 }
 
@@ -46,13 +51,12 @@
 }
 
 .cb-mission-stats-s {
-  width: 100%;
   text-align: center;
 }
 
 .cb-stat {
+  min-width: 140px;
   margin-top: 20px;
-  padding-left: 160px;
 }
 
 .cb-mission-stats-number {
@@ -74,7 +78,6 @@
 }
 
 .cb-mission-row {
-  min-width: 140px;
   text-align: center;
 }
 
@@ -83,7 +86,6 @@
 }
 
 .cb-stats-row-num {
-  min-width: 140px;
   margin-top: 20px;
   outline: none;
 }
@@ -103,6 +105,10 @@
   .cb-mission-stats-title {
     margin-top: 10%;
   }
+
+  .cb-mission-stats-m {
+    padding-bottom: 6%;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -113,6 +119,10 @@
   .cb-mission-stats-title {
     margin-top: 10%;
   }
+
+  .cb-mission-stats-m {
+    padding-bottom: 6%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -122,6 +132,10 @@
 
   .cb-mission-stats-title {
     margin-top: 10%;
+  }
+
+  .cb-mission-stats-m {
+    padding-bottom: 6%;
   }
 }
 
