@@ -33,7 +33,7 @@
 .cb-mission-stats-m {
   width: 60%;
   text-align: center;
-  padding-bottom: 15vh;
+  padding-bottom: 6vh;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -41,6 +41,30 @@
 .cb-mission-stats-s {
   width: 80%;
   text-align: center;
+}
+
+.cb-stat {
+  min-width: 140px;
+  margin-top: 20px;
+  outline: none;
+}
+
+.cb-mission-stats-number {
+  font-size: 95px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #F77B6F;
+  font-weight: 450;
+  line-height: 120px;
+  text-align: left;
+}
+
+.cb-mission-stats-text {
+  font-size: 13px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #80868B;
+  width: 120px;
+  line-height: 16px;
+  text-align: left;
 }
 
 .cb-mission-row {
