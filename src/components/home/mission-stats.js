@@ -8,7 +8,8 @@ const MissionStats = () => {
     <div className="cb-mission-stats-bg">
       <div className="container">
         <div className="cb-mission-stats-m">
-          <div className="container">
+          <div className="row cb-mission-row">
+          <div className="col-md-12">
             <h1 className="cb-mission-stats-title">
               OUR MISSION
             </h1>
@@ -25,10 +26,13 @@ const MissionStats = () => {
                 Read more →
               </Link>
             </div>
+            </div>
           </div>
         </div>
         <div className="cb-mission-stats-s">
-          <p>Hi</p>
+          <div className="row cb-stats-row">
+            HI
+          </div>
         </div>
       </div>
     </div>

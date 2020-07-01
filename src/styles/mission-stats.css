@@ -8,7 +8,7 @@
   font-family: "Circular Std Book", sans-serif;
   color: #80868B;
   text-align: center;
-  padding-bottom: 2vh;
+  padding-bottom: 1.2vh;
 }
 
 .cb-mission-stats-description {
@@ -16,7 +16,6 @@
   font-family: "Circular Std Book", sans-serif;
   color: #2F2F30;
   text-align: center;
-  padding-bottom: 1vh;
 }
 
 .cb-mission-stats-more {
@@ -35,6 +34,8 @@
   width: 60%;
   text-align: center;
   padding-bottom: 15vh;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .cb-mission-stats-s {
@@ -42,7 +43,24 @@
   text-align: center;
 }
 
+.cb-mission-row {
+  min-width: 140px;
+  outline: none;
+  text-align: center;
+}
+
+.cb-stats-row {
+  margin-top: 30px;
+}
+
+.cb-stats-row-num {
+  min-width: 140px;
+  margin-top: 20px;
+  outline: none;
+}
+
 .cb-mission-stats-bg {
+  margin-top: 8vh;
   background-color: white;
   width: 100%;
   padding-bottom: 15vh;
