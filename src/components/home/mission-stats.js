@@ -13,11 +13,13 @@ const MissionStats = () => {
             <h1 className="cb-mission-stats-title">
               OUR MISSION
             </h1>
-            <p className="cb-mission-stats-description">
-              We are a software development club that strives to
-              build a community where passionate and driven engineers
-              can grow together through meaningful industry initiatives.
-            </p>
+            <div className="cb-mission">
+              <p className="cb-mission-stats-description">
+                We are a software development club that strives to
+                build a community where passionate and driven engineers
+                can grow together through meaningful industry initiatives.
+              </p>
+            </div>
             <div className="cb-mission-stats-end">
               <Link
                 className="cb-mission-stats-more"
@@ -47,6 +49,7 @@ const MissionStats = () => {
               <div className="cb-mission-stats-number">46&#13;&#10;</div>
               <div className="cb-mission-stats-text">active members and over 100 alumni</div>
             </div>
+            <div className="col cb-stat"></div>
           </div>
         </div>
       </div>

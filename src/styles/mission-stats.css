@@ -7,8 +7,14 @@
   font-size: 13px;
   font-family: "Circular Std Book", sans-serif;
   color: #80868B;
+  line-height: 16px;
   text-align: center;
   padding-bottom: 1.2vh;
+}
+
+.cb-mission {
+  width: 673px;
+  margin: auto;
 }
 
 .cb-mission-stats-description {
@@ -16,6 +22,8 @@
   font-family: "Circular Std Book", sans-serif;
   color: #2F2F30;
   text-align: center;
+  font-weight: 450;
+  line-height: 30px;
 }
 
 .cb-mission-stats-more {
@@ -24,6 +32,8 @@
   color: #F77D73;
   text-align: center;
   text-decoration-line: underline;
+  font-weight: 450;
+  line-height: 18px;
 }
 
 .cb-mission-stats-end {
@@ -31,22 +41,18 @@
 }
 
 .cb-mission-stats-m {
-  width: 60%;
   text-align: center;
   padding-bottom: 6vh;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 .cb-mission-stats-s {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
 .cb-stat {
-  min-width: 140px;
   margin-top: 20px;
-  outline: none;
+  padding-left: 160px;
 }
 
 .cb-mission-stats-number {
@@ -69,7 +75,6 @@
 
 .cb-mission-row {
   min-width: 140px;
-  outline: none;
   text-align: center;
 }
 
@@ -84,7 +89,7 @@
 }
 
 .cb-mission-stats-bg {
-  margin-top: 8vh;
+  margin-top: 4vh;
   background-color: white;
   width: 100%;
   padding-bottom: 15vh;
