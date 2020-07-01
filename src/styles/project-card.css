@@ -3,9 +3,20 @@
   src: url("../fonts/CircularStd-Book.otf") format("opentype");
 }
 
+.cb-project-col {
+  margin: 12px 0px;
+}
+
 .cb-project-card {
-  width: 360px;
-  height: 180px;
+  max-width: 360px;
+  height: 200px;
+  padding: 0px;
+}
+
+.cb-project-card-body {
+  padding: 25px 35px 30px;
+  font-family: "Circular Std Book", sans-serif;
+  font-size: 14px;
 }
 
 .cb-project-logo {
@@ -13,10 +24,13 @@
   border-radius: 3px;
 }
 
+.cb-project-type {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
 .cb-project-text {
   max-width: 300px;
-  font-family: "Circular Std Book", sans-serif;
-  font-size: 14px;
   font-style: normal;
   line-height: 18px;
   color: #80868b;

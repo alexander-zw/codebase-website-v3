@@ -29,23 +29,23 @@ const ProjectsSection = ({ heading, description, client }) => {
   const showProjectCards = () => {
     const { edges } = currentProjects.allAirtable
 
-    // This chain of functions does three things
-    //   1. Filter out projects based on whether client or mentored
-    //   2. Create a ProjectCard with the CMS info and wrap in a col
-    //   3. Wrap every two columns in a row
+    /**
+     * This chain of functions does three things
+     *  1. Filter out projects based on whether client or mentored
+     *  2. Create a ProjectCard with the Airtable CMS info
+     *  3. Wrap every two columns in a row
+     */
     const projectCards = edges
       .filter(edge => !!edge.node.data.Client === client)
       .map(edge => {
         const { Logo, Type, Description, Company } = edge.node.data
         return (
-          <div className="col">
-            <ProjectCard
-              logoUrl={Logo[0].url}
-              projectType={Type}
-              description={Description}
-              altText={Company}
-            />
-          </div>
+          <ProjectCard
+            logoUrl={Logo[0].url}
+            projectType={Type}
+            description={Description}
+            altText={Company}
+          />
         )
       })
       .reduce((projectRow, _projectCol, i, projectCols) => {
