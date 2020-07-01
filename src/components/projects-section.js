@@ -19,6 +19,7 @@ const ProjectsSection = ({ heading, description, client }) => {
               }
               Type
               Description
+              Hyperlink
             }
           }
         }
@@ -38,12 +39,13 @@ const ProjectsSection = ({ heading, description, client }) => {
     const projectCards = edges
       .filter(edge => !!edge.node.data.Client === client)
       .map(edge => {
-        const { Logo, Type, Description, Company } = edge.node.data
+        const { Logo, Type, Description, Hyperlink, Company } = edge.node.data
         return (
           <ProjectCard
             logoUrl={Logo[0].url}
             projectType={Type}
             description={Description}
+            hyperlink={Hyperlink}
             altText={Company}
           />
         )
