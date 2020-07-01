@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Col from "react-bootstrap/col"
 
 import "../styles/project-card.css"
 
@@ -11,7 +12,7 @@ const ProjectCard = ({
   altText,
 }) => {
   return (
-    <div className="col-md-6 col-sm-12 cb-project-col">
+    <Col md={6} sm={12} className="cb-project-col">
       <div className="card cb-project-card">
         <div className="card-body cb-project-card-body">
           <a href={hyperlink}>
@@ -23,7 +24,7 @@ const ProjectCard = ({
           <p className="cb-project-text">{description}</p>
         </div>
       </div>
-    </div>
+    </Col>
   )
 }
 

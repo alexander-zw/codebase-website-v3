@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Row from "react-bootstrap/row"
+import Col from "react-bootstrap/col"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectCard from "./project-card"
 
@@ -52,9 +54,7 @@ const ProjectsSection = ({ heading, description, client }) => {
       })
       .reduce((projectRow, _projectCol, i, projectCols) => {
         if (i % 2 === 0) {
-          projectRow.push(
-            <div className="row">{projectCols.slice(i, i + 2)}</div>
-          )
+          projectRow.push(<Row>{projectCols.slice(i, i + 2)}</Row>)
         }
         return projectRow
       }, [])
@@ -63,14 +63,14 @@ const ProjectsSection = ({ heading, description, client }) => {
 
   return (
     <div>
-      <div className="row">
-        <div className="col">
+      <Row>
+        <Col>
           <div className="cb-projects-section">
             <h2 className="cb-projects-section-title">{heading}</h2>
             <p className="cb-projects-section-blurb">{description}</p>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
       {showProjectCards()}
     </div>
   )
