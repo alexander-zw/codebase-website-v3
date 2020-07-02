@@ -1,4 +1,5 @@
 import React from "react"
+import { Container, Row, Col } from "react-bootstrap"
 
 import "../../../styles/base-behaviors.css"
 import ReactCSSTransitionReplace from "react-css-transition-replace"
@@ -50,9 +51,9 @@ class BaseBehaviors extends React.Component {
 
   render() {
     return (
-      <div className="container cb-bb-container">
-        <div className="row cb-bb-main-row">
-          <div className="col-md-6">
+      <Container className="cb-bb-container">
+        <Row className="cb-bb-main-row">
+          <Col md={6}>
             <h1 className="cb-bb-title">OUR BASE BEHAVIORS</h1>
             <ReactCSSTransitionReplace
               transitionName="cb-bb-cross-fade"
@@ -64,8 +65,8 @@ class BaseBehaviors extends React.Component {
                 baseBehavior={this.bbList[this.state.bbIndex]}
               />
             </ReactCSSTransitionReplace>
-          </div>
-          <div className="col-md-6">
+          </Col>
+          <Col md={6}>
             <ReactCSSTransitionReplace
               transitionName="cb-bb-cross-fade"
               transitionEnterTimeout={500}
@@ -76,10 +77,10 @@ class BaseBehaviors extends React.Component {
                 baseBehavior={this.bbList[this.state.bbIndex]}
               />
             </ReactCSSTransitionReplace>
-          </div>
-        </div>
+          </Col>
+        </Row>
         <div className="row cb-bb-arrow-row">
-          <div className="col-md-6">
+          <Col md={6}>
             <IoIosArrowBack
               onClick={this.prevBB}
               size="2em"
@@ -90,11 +91,11 @@ class BaseBehaviors extends React.Component {
               size="2em"
               className="cb-bb-right-arrow"
             />
-          </div>
+          </Col>
         </div>
-        <div className="row cb-bb-caption-row">
-          <div
-            className={`col cb-bb-caption ${this.getCaptionClass(0)}`}
+        <Row className="cb-bb-caption-row">
+          <Col
+            className={`cb-bb-caption ${this.getCaptionClass(0)}`}
             onClick={() => this.setBBIndex(0)}
             onKeyDown={() => this.setBBIndex(0)}
             role="button"
@@ -102,9 +103,9 @@ class BaseBehaviors extends React.Component {
           >
             <div className="cb-bb-number">01&#13;&#10;</div>
             <div className="cb-bb-text cb-bb-people">Put People First</div>
-          </div>
-          <div
-            className={`col cb-bb-caption ${this.getCaptionClass(1)}`}
+          </Col>
+          <Col
+            className={`cb-bb-caption ${this.getCaptionClass(1)}`}
             onClick={() => this.setBBIndex(1)}
             onKeyDown={() => this.setBBIndex(1)}
             role="button"
@@ -112,9 +113,9 @@ class BaseBehaviors extends React.Component {
           >
             <div className="cb-bb-number">02&#13;&#10;</div>
             <div className="cb-bb-text">Actively Take Ownership</div>
-          </div>
-          <div
-            className={`col cb-bb-caption ${this.getCaptionClass(2)}`}
+          </Col>
+          <Col
+            className={`cb-bb-caption ${this.getCaptionClass(2)}`}
             onClick={() => this.setBBIndex(2)}
             onKeyDown={() => this.setBBIndex(2)}
             role="button"
@@ -122,9 +123,9 @@ class BaseBehaviors extends React.Component {
           >
             <div className="cb-bb-number">03&#13;&#10;</div>
             <div className="cb-bb-text">Seek Continuous Growth</div>
-          </div>
-          <div
-            className={`col cb-bb-caption ${this.getCaptionClass(3)}`}
+          </Col>
+          <Col
+            className={`cb-bb-caption ${this.getCaptionClass(3)}`}
             onClick={() => this.setBBIndex(3)}
             onKeyDown={() => this.setBBIndex(3)}
             role="button"
@@ -132,9 +133,9 @@ class BaseBehaviors extends React.Component {
           >
             <div className="cb-bb-number">04&#13;&#10;</div>
             <div className="cb-bb-text">Communicate Candidly</div>
-          </div>
-          <div
-            className={`col cb-bb-caption ${this.getCaptionClass(4)}`}
+          </Col>
+          <Col
+            className={`cb-bb-caption ${this.getCaptionClass(4)}`}
             onClick={() => this.setBBIndex(4)}
             onKeyDown={() => this.setBBIndex(4)}
             role="button"
@@ -142,14 +143,14 @@ class BaseBehaviors extends React.Component {
           >
             <div className="cb-bb-number">05&#13;&#10;</div>
             <div className="cb-bb-text">Genuinely Give Back</div>
-          </div>
-        </div>
-        <div className="row cb-bb-image-row">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row className="cb-bb-image-row">
+          <Col md={12}>
             <BaseBehaviorsClub />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     )
   }
 }
