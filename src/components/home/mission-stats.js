@@ -1,8 +1,29 @@
-import React from "react"
+import React from "react";
+import ReactDOM from 'react-dom';
 import CountUp from 'react-countup';
 
 import "../../styles/mission-stats.css"
 import { Link } from "gatsby"
+
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 const MissionStats = () => {
   return (
@@ -12,13 +33,17 @@ const MissionStats = () => {
           <div className="row cb-mission-row">
           <div className="col-md-12">
             <h1 className="cb-mission-stats-title">
-              OUR MISSION
+              <FadeInSection>
+                OUR MISSION
+              </FadeInSection>
             </h1>
             <div className="cb-mission">
               <p className="cb-mission-stats-description">
-                We are a software development club that strives to
-                build a community where passionate and driven engineers
-                can grow together through meaningful industry initiatives.
+                <FadeInSection>
+                  We are a software development club that strives to
+                  build a community where passionate and driven engineers
+                  can grow together through meaningful industry initiatives.
+                </FadeInSection>
               </p>
             </div>
             <div className="cb-mission-stats-end">
@@ -26,7 +51,9 @@ const MissionStats = () => {
                 className="cb-mission-stats-more"
                 to="/about"
               >
-                Read more →
+                <FadeInSection>
+                  Read more →
+                </FadeInSection>
               </Link>
             </div>
             </div>
@@ -36,20 +63,28 @@ const MissionStats = () => {
           <div className="cb-stats">
             <div className="row cb-stats-row">
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number"><CountUp start={0} end={5}/></div>
-                <div className="cb-mission-stats-text">projects every semester</div>
+                <FadeInSection>
+                  <div className="cb-mission-stats-number"><CountUp start={0} end={5}/></div>
+                  <div className="cb-mission-stats-text">projects every semester</div>
+                </FadeInSection>
               </div>
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number"><CountUp start={0} end={12}/></div>
-                <div className="cb-mission-stats-text">weeks of agile development</div>
+                <FadeInSection>
+                  <div className="cb-mission-stats-number"><CountUp start={0} end={12} useEasing={true}/></div>
+                  <div className="cb-mission-stats-text">weeks of agile development</div>
+                </FadeInSection>
               </div>
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number"><CountUp start={0} end={25}/></div>
-                <div className="cb-mission-stats-text">completed projects and counting</div>
+                <FadeInSection>
+                  <div className="cb-mission-stats-number"><CountUp start={0} end={25}/></div>
+                  <div className="cb-mission-stats-text">completed projects and counting</div>
+                </FadeInSection>
               </div>
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number"><CountUp start={0} end={46}/></div>
-                <div className="cb-mission-stats-text">active members and over 100 alumni</div>
+                <FadeInSection>
+                  <div className="cb-mission-stats-number"><CountUp start={0} end={46}/></div>
+                  <div className="cb-mission-stats-text">active members and over 100 alumni</div>
+                </FadeInSection>
               </div>
             </div>
           </div>
