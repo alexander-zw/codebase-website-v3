@@ -1,29 +1,9 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import CountUp from 'react-countup';
+import FadeInSection from '../fade-in-text.js'
 
 import "../../styles/mission-stats.css"
 import { Link } from "gatsby"
-
-function FadeInSection(props) {
-  const [isVisible, setVisible] = React.useState(true);
-  const domRef = React.useRef();
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
-  }, []);
-  return (
-    <div
-      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-      ref={domRef}
-    >
-      {props.children}
-    </div>
-  );
-}
 
 const MissionStats = () => {
   return (
@@ -76,7 +56,7 @@ const MissionStats = () => {
               </div>
               <div className="col cb-stat">
                 <FadeInSection>
-                  <div className="cb-mission-stats-number"><CountUp start={0} end={25}/></div>
+                  <div className="cb-mission-stats-number"><CountUp start={0} end={25} duration={2}/></div>
                   <div className="cb-mission-stats-text">completed projects and counting</div>
                 </FadeInSection>
               </div>
