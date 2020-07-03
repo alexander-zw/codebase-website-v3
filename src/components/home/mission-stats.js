@@ -1,4 +1,5 @@
 import React from "react"
+import CountUp from 'react-countup';
 
 import "../../styles/mission-stats.css"
 import { Link } from "gatsby"
@@ -35,19 +36,19 @@ const MissionStats = () => {
           <div className="cb-stats">
             <div className="row cb-stats-row">
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number">5</div>
+                <div className="cb-mission-stats-number"><CountUp start={0} end={5}/></div>
                 <div className="cb-mission-stats-text">projects every semester</div>
               </div>
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number">12</div>
+                <div className="cb-mission-stats-number"><CountUp start={0} end={12}/></div>
                 <div className="cb-mission-stats-text">weeks of agile development</div>
               </div>
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number">25</div>
+                <div className="cb-mission-stats-number"><CountUp start={0} end={25}/></div>
                 <div className="cb-mission-stats-text">completed projects and counting</div>
               </div>
               <div className="col cb-stat">
-                <div className="cb-mission-stats-number">46</div>
+                <div className="cb-mission-stats-number"><CountUp start={0} end={46}/></div>
                 <div className="cb-mission-stats-text">active members and over 100 alumni</div>
               </div>
             </div>
