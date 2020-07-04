@@ -1,5 +1,6 @@
-import React from "react";
-import CountUp from 'react-countup';
+import React, {useState} from "react"
+import CountUp from 'react-countup'
+import VisibilitySensor from 'react-visibility-sensor'
 import FadeInSection from '../fade-in-text.js'
 
 import "../../styles/mission-stats.css"
@@ -36,33 +37,65 @@ const MissionStats = () => {
                 </FadeInSection>
               </Link>
             </div>
-            </div>
           </div>
         </div>
-        <div className="cb-mission-stats-s">
-          <div className="cb-stats">
-            <div className="row cb-stats-row">
-              <div className="col cb-stat">
+      </div>
+      <div className="cb-mission-stats-s">
+        <div className="cb-stats">
+          <div className="row cb-stats-row">
+            <div className="col cb-stat">
                 <FadeInSection>
-                  <div className="cb-mission-stats-number"><CountUp start={0} end={5}/></div>
+                  <div className="cb-mission-stats-number">
+                    <CountUp end={5} duration={3} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                      </CountUp>
+                  </div>
                   <div className="cb-mission-stats-text">projects every semester</div>
                 </FadeInSection>
               </div>
               <div className="col cb-stat">
                 <FadeInSection>
-                  <div className="cb-mission-stats-number"><CountUp start={0} end={12} useEasing={true}/></div>
+                  <div className="cb-mission-stats-number">
+                    <CountUp end={12} duration={3} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                      </CountUp>
+                  </div>
                   <div className="cb-mission-stats-text">weeks of agile development</div>
                 </FadeInSection>
               </div>
               <div className="col cb-stat">
                 <FadeInSection>
-                  <div className="cb-mission-stats-number"><CountUp start={0} end={25} duration={2}/></div>
+                  <div className="cb-mission-stats-number">
+                    <CountUp end={25} duration={3} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                      </CountUp>
+                  </div>
                   <div className="cb-mission-stats-text">completed projects and counting</div>
                 </FadeInSection>
               </div>
               <div className="col cb-stat">
                 <FadeInSection>
-                  <div className="cb-mission-stats-number"><CountUp start={0} end={46}/></div>
+                  <div className="cb-mission-stats-number">
+                    <CountUp end={46} duration={3} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                      </CountUp>
+                  </div>
                   <div className="cb-mission-stats-text">active members and over 100 alumni</div>
                 </FadeInSection>
               </div>

@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDOM from 'react-dom';
+import React from "react"
 import "../styles/fade-in-text.css"
 
 function FadeInSection(props) {
