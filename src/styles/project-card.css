@@ -9,14 +9,14 @@
 
 .cb-project-card {
   max-width: 360px;
-  height: 200px;
+  height: 210px;
   padding: 0px;
 }
 
 .cb-project-card-body {
   padding: 25px 35px 30px;
   font-family: "Circular Std Book", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .cb-project-logo {

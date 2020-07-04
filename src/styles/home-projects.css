@@ -7,19 +7,13 @@
   font-family: "Circular Std Book", sans-serif;
   font-weight: 450;
   max-width: 780px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .cb-home-projects-title {
   color: #80868b;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
   margin-top: 5%;
-}
-
-.cb-orange-link {
-  color: #f77b6f;
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration-line: underline;
-  line-height: 28px;
 }
