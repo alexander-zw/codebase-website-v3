@@ -46,7 +46,7 @@ const MissionStats = () => {
             <div className="col cb-stat">
                 <FadeInSection>
                   <div className="cb-mission-stats-number">
-                    <CountUp end={5} duration={3} redraw={true}>
+                    <CountUp end={5} duration={2.75} redraw={true}>
                       {({ countUpRef, start }) => (
                           <VisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />
@@ -60,7 +60,7 @@ const MissionStats = () => {
               <div className="col cb-stat">
                 <FadeInSection>
                   <div className="cb-mission-stats-number">
-                    <CountUp end={12} duration={3} redraw={true}>
+                    <CountUp end={12} duration={2.75} redraw={true}>
                       {({ countUpRef, start }) => (
                           <VisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />
@@ -74,7 +74,7 @@ const MissionStats = () => {
               <div className="col cb-stat">
                 <FadeInSection>
                   <div className="cb-mission-stats-number">
-                    <CountUp end={25} duration={3} redraw={true}>
+                    <CountUp end={25} duration={2.75} redraw={true}>
                       {({ countUpRef, start }) => (
                           <VisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />
@@ -88,7 +88,7 @@ const MissionStats = () => {
               <div className="col cb-stat">
                 <FadeInSection>
                   <div className="cb-mission-stats-number">
-                    <CountUp end={46} duration={3} redraw={true}>
+                    <CountUp end={46} duration={2.75} redraw={true}>
                       {({ countUpRef, start }) => (
                           <VisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />
