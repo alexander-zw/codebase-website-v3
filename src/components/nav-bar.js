@@ -2,11 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-
-import Theme from "../constants"
-
 import { Navbar, Nav } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
+
+import { Theme } from "../constants"
 import "../styles/nav-bar.css"
 
 const NavBar = ({ theme }) => {
@@ -147,8 +145,8 @@ const getLinkClass = (theme, action = false) => {
 
 const getActiveLinkClass = theme => {
   return theme === Theme.LIGHT
-    ? "cb-active-link-light"
-    : "cb-active-link-default"
+    ? "cb-nav-bar-active-link-light"
+    : "cb-nav-bar-active-link-default"
 }
 
 export default NavBar
