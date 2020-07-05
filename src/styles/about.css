@@ -1,15 +1,9 @@
-.member-container {
+.page-container {
   background: rgba(193, 200, 209, 0.15);
-  padding: 50px;
 }
 
-.member-group {
-  justify-content: center;
-  width: 65vw;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
+.member-container {
+  padding: 50px;
 }
 
 .member-container h1 {
@@ -18,4 +12,12 @@
   font-size: 30px;
   line-height: 30px;
   padding: 15px;
+}
+
+.member-group {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
 }

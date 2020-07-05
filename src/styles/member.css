@@ -1,15 +1,14 @@
-.wrapper {
+.member-wrapper {
   position: relative;
-  width: 12vw;
-  height: 12vw;
+  justify-content: center;
 }
 
-.image {
+.member-image {
   display: block;
   border-radius: 3px;
 }
 
-.overlay {
+.member-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -22,11 +21,11 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.wrapper:hover .overlay {
+.member-wrapper:hover .member-overlay {
   opacity: 1;
 }
 
-.title {
+.member-title {
   color: white;
   font-size: 12px;
   text-transform: uppercase;
@@ -36,7 +35,7 @@
   text-align: center;
 }
 
-.name {
+.member-name {
   color: white;
   font-size: 14px;
   text-transform: capitalize;
@@ -47,10 +46,12 @@
 }
 
 .member {
-  display: flex;
-  width: 12vw;
-  height: 12vw;
-  box-sizing: border-box;
-  justify-content: center;
+  width: 180px;
+  height: 180px;
   margin: 15px;
+  margin-top: 2em;
+  margin-bottom: 0px;
+  background-size: cover;
+  border: none;
+  transition: border 0.2s ease-in;
 }

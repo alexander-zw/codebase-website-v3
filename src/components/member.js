@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import "../styles/member.css"
 
-const Member = props => (
+const Member = ({src, title, name}) => (
   // Load image using gatsby-image
   <StaticQuery
     query={graphql`
@@ -26,16 +26,16 @@ const Member = props => (
     `}
     render={data => {
       const image = data.images.edges.find(n => {
-        return n.node.relativePath.includes(props.src)
+        return n.node.relativePath.includes(src)
 	  })
 	  // If failed to load image, display the member without an image.
       if (!image) {
         return (
-          <div class="member">
-            <div class="wrapper">
-              <div class="overlay">
-                <div class="title">{props.title}</div>
-                <div class="name">{props.name}</div>
+          <div className="member">
+            <div className="member-wrapper">
+              <div className="member-overlay">
+                <div className="member-title">{title}</div>
+                <div className="member-name">{name}</div>
               </div>
             </div>
           </div>
@@ -43,16 +43,16 @@ const Member = props => (
       }
 
       return (
-        <div class="member">
-          <div class="wrapper">
+        <div className="member">
+          <div className="member-wrapper">
             <Img
-              className="image"
-              alt={props.alt}
+              className="member-image"
+              alt={name}
               fluid={image.node.childImageSharp.fluid}
             />
-            <div class="overlay">
-              <div class="title">{props.title}</div>
-              <div class="name">{props.name}</div>
+            <div className="member-overlay">
+              <div className="member-title">{title}</div>
+              <div className="member-name">{name}</div>
             </div>
           </div>
         </div>
