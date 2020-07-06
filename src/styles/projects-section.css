@@ -1,4 +1,9 @@
 .cb-projects-section {
+  margin: 15px 0 10px;
+  padding-bottom: 5px;
+}
+
+.cb-projects-section-header {
   max-width: 600px;
 }
 

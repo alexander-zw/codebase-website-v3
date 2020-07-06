@@ -62,10 +62,10 @@ const ProjectsSection = ({ heading, description, client }) => {
   }
 
   return (
-    <div>
+    <div className="cb-projects-section">
       <Row>
         <Col>
-          <div className="cb-projects-section">
+          <div className="cb-projects-section-header">
             <h2 className="cb-projects-section-title">{heading}</h2>
             <p className="cb-projects-section-blurb">{description}</p>
           </div>
