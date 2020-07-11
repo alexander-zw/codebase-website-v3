@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Exec, Theme } from "../constants"
+import { Exec, PMs, Theme } from "../constants"
 import MemberList from "../components/member-list"
 import BaseBehaviors from "../components/about/base-behaviors/base-behaviors"
 import "../styles/about.css"
@@ -16,7 +16,8 @@ const AboutPage = ({ location }) => {
 
 	  <div className="page-container">
 		<div className="container">
-			<MemberList members={Exec}></MemberList>
+			<MemberList title={"Executive Team"} members={Exec}></MemberList>
+			<MemberList title={"Product Managers"} members={PMs}></MemberList>
 		</div>
 	  </div>
 	  

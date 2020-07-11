@@ -6,14 +6,6 @@
   padding: 50px;
 }
 
-.member-container h1 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  padding: 15px;
-}
-
 .member-group {
   justify-content: center;
   margin-left: auto;

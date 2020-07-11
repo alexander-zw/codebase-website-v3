@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import Member from "../components/member"
-import "../styles/about.css"
+import "../styles/member-list.css"
 
-const MemberList = ({ members }) => {
+const MemberList = ({ members, title }) => {
   return (
     <div className="member-container">
-      <h1>Executive Team</h1>
+      <h1>{title}</h1>
 
       <div className="member-group">
         {members.map(element => {
