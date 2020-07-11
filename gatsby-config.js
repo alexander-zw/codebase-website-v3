@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Codebase`,
@@ -25,6 +29,19 @@ module.exports = {
         theme_color: `#336ee2`,
         display: `minimal-ui`,
         icon: `src/images/cb-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-source-airtable",
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        tables: [
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Projects",
+            tableView: "Current",
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

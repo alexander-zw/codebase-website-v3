@@ -13,3 +13,20 @@ body,
 footer {
   margin-top: auto;
 }
+
+.cb-orange-link {
+  color: #f77b6f;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  line-height: 28px;
+}
+
+.cb-orange-link:hover {
+  opacity: 0.8;
+  color: #f77b6f;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+}
