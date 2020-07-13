@@ -26,11 +26,9 @@ const Layout = ({ children, theme }) => {
   //   `)
 
   return (
-    <div>
+    <div className="cb-contents">
       <NavBar theme={theme} />
-      <div>
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <Footer />
     </div>
   )

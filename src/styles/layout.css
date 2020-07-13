@@ -1,5 +1,17 @@
-body {
+html,
+body,
+.cb-contents {
+  height: 100vh;
   margin: 0;
+}
+
+.cb-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .cb-orange-link {
