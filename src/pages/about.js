@@ -6,22 +6,23 @@ import MemberList from "../components/member-list"
 import BaseBehaviors from "../components/about/base-behaviors/base-behaviors"
 import "../styles/about.css"
 
+import BeyondCodebase from "../components/about/beyond-cb/beyond-cb"
 
 const AboutPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
-      <SEO title="About" />
-	   
+      <SEO title="About" />	   
     <BaseBehaviors />
 
 	  <div className="page-container">
-		<div className="container">
-			<MemberList title={"Executive Team"} members={Exec}></MemberList>
-			<MemberList title={"Product Managers"} members={PMs}></MemberList>
-		</div>
+		  <div className="container">
+			  <MemberList title={"Executive Team"} members={Exec}></MemberList>
+			  <MemberList title={"Product Managers"} members={PMs}></MemberList>
+		  </div>
 	  </div>
 	  
-	  
+    <BaseBehaviors />
+    <BeyondCodebase />
     </Layout>
   )
 }
