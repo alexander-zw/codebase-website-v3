@@ -36,32 +36,15 @@ const CompanyLogo = ({src, name}) => (
         </div>
       )
     }
-
+    var logoSize = "logo";
     if (name === "ea" || name === "salesforce" || name === "stripe") {
-      return (
-        <div className="logo small">
-        <Img
-          alt={name}
-          fluid={image.node.childImageSharp.fluid}
-        />
-        </div>
-      )
-    }
-
-    if (name === "robinhood" || name === "facebook" || 
-        name === "microsoft" || name === "mongo") {
-      return (
-        <div className="logo big">
-        <Img
-          alt={name}
-          fluid={image.node.childImageSharp.fluid}
-        />
-        </div>
-      )
+      logoSize += " small";
+    } else if (name === "robinhood" || name === "facebook" || name === "microsoft" || name === "mongo") {
+      logoSize += " big";
     }
 
     return (
-      <div className="logo">
+      <div className={logoSize}>
         <Img
           alt={name}
           fluid={image.node.childImageSharp.fluid}
