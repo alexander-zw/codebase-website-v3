@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+.beyond-container {
+  max-width: 1050px;
+  padding-bottom: 48px;
+}
+
+.beyond-text-box {
+  margin: 0;
+  max-width: 650px;
+}
+
+.beyond-title {
+  font-size: 24px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #000000;
+  margin-bottom: 16px;
+  padding-top: 48px;
+}
+
+.beyond-text {
+  font-size: 15px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #80868b;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 100px;
+  margin: 0px 32px 40px 8px;
+  border: none;
+}
+
+.small {
+  width: 80px;
+}
+
+.big {
+  width: 120px;
+}
+
+.logo-image {
+  display: block;
+}
+
+.logo-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
