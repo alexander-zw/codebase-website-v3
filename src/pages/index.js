@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import { Theme } from "../constants"
 import HomeHeader from "../components/home/home-header"
 import MissionStats from "../components/home/mission-stats"
+import HomeProjects from "../components/home/home-projects"
 
 const IndexPage = ({ location }) => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = ({ location }) => {
       <SEO title="Home" />
       <HomeHeader />
       <MissionStats />
+      <HomeProjects />
     </Layout>
   )
 }

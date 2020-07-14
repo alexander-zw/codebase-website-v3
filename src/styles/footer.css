@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(193, 200, 209, 0.15);
+}
+
+.cb-footer-container {
+  max-width: 780px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.cb-footer-disclaimer {
+  font-size: 12px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #80868b;
+}
+
+.cb-footer-ocf-row {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.cb-footer-social-logo {
+  margin-right: 7px;
+  margin-bottom: 4px;
+}
+
+.cb-footer-logo {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.cb-footer-title {
+  font-size: 15px;
+  font-family: "Circular Std Bold", sans-serif;
+  color: #2f2f30;
+}
+
+.cb-footer-link {
+  font-size: 15px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #2f2f30;
+}
+
+.cb-footer-social-link {
+  font-size: 15px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #2f2f30;
+}
+
+.cb-footer-link:hover,
+.cb-footer-social-link:hover {
+  color: #2f2f30;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+}
+
+.cb-footer-ocf-link:hover,
+.cb-footer-logo-link:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+}

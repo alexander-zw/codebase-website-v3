@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import "bootstrap/dist/css/bootstrap.min.css"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import NavBar from "./nav-bar"
@@ -25,11 +26,9 @@ const Layout = ({ children, theme }) => {
   //   `)
 
   return (
-    <div>
+    <div className="cb-contents">
       <NavBar theme={theme} />
-      <div>
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <Footer />
     </div>
   )
