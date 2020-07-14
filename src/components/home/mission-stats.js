@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Container, Row, Col } from "react-bootstrap"
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 
@@ -14,70 +15,70 @@ const MissionStats = () => {
     }
   return (
     <div className="cb-mission-stats-bg">
-      <div className="container">
+      <Container>
         <div className="cb-mission-stats-m">
-          <div className="row cb-mission-stats-mission-row">
-          <div className="col-md-12">
-            <h1 className="cb-mission-stats-title">
-              OUR MISSION
-            </h1>
-            <div className="cb-mission-stats-mission">
-              <p className="cb-mission-stats-description">
-                We are a software development club that strives to
-                build a community where passionate and driven engineers
-                can grow together through meaningful industry initiatives.
-              </p>
-            </div>
-            <div className="cb-mission-stats-end">
-              <Link
-                className="cb-mission-stats-more"
-                to="/about"
-              >
-                Read more →
-              </Link>
-            </div>
-          </div>
+          <Row className="cb-mission-stats-mission-row">
+            <Col md={12}>
+              <h1 className="cb-mission-stats-title">
+                OUR MISSION
+              </h1>
+              <div className="cb-mission-stats-mission">
+                <p className="cb-mission-stats-description">
+                  We are a software development club that strives to
+                  build a community where passionate and driven engineers
+                  can grow together through meaningful industry initiatives.
+                </p>
+              </div>
+              <div className="cb-mission-stats-end">
+                <Link
+                  className="cb-mission-stats-more"
+                  to="/about"
+                >
+                  Read more →
+                </Link>
+              </div>
+            </Col>
+          </Row>
         </div>
-      </div>
-      <div className="cb-mission-stats-s">
-        <div className="cb-mission-stats-stats">
-          <div className="row cb-mission-stats-stats-row">
-            <div className="col cb-mission-stats-stat">
-              <div className="cb-mission-stats-number">
-                <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
-                  <CountUp start={0} end={didViewCountUp ? 5 : 0} duration={2.75} />
-                </VisibilitySensor>
-              </div>
-              <div className="cb-mission-stats-text">projects every semester</div>
-              </div>
-              <div className="col cb-mission-stats-stat">
+        <div className="cb-mission-stats-s">
+          <div className="cb-mission-stats-stats">
+            <Row className="cb-mission-stats-stats-row">
+              <Col md={3} className="cb-mission-stats-stat">
+                <div className="cb-mission-stats-number">
+                  <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
+                    <CountUp start={0} end={didViewCountUp ? 5 : 0} duration={2.75} />
+                  </VisibilitySensor>
+                </div>
+                <div className="cb-mission-stats-text">projects every semester</div>
+              </Col>
+              <Col md={3} className="cb-mission-stats-stat">
                 <div className="cb-mission-stats-number">
                   <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                     <CountUp start={0} end={didViewCountUp ? 12 : 0} duration={2.75} />
                   </VisibilitySensor>
                 </div>
                 <div className="cb-mission-stats-text">weeks of agile development</div>
-              </div>
-              <div className="col cb-mission-stats-stat">
+              </Col>
+              <Col md={3} className="cb-mission-stats-stat">
                 <div className="cb-mission-stats-number">
                   <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                     <CountUp start={0} end={didViewCountUp ? 25 : 0} duration={2.75} />
                   </VisibilitySensor>
                 </div>
                 <div className="cb-mission-stats-text">completed projects and counting</div>
-              </div>
-              <div className="col cb-mission-stats-stat">
+              </Col>
+              <Col md={3} className="cb-mission-stats-stat">
                 <div className="cb-mission-stats-number">
                   <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                     <CountUp start={0} end={didViewCountUp ? 46 : 0} duration={2.75} />
                   </VisibilitySensor>
                 </div>
                 <div className="cb-mission-stats-text">active members and over 100 alumni</div>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }

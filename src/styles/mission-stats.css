@@ -52,7 +52,6 @@
 }
 
 .cb-mission-stats-stat {
-  min-width: 140px;
   margin-top: 20px;
   text-align: center;
 }
@@ -72,7 +71,7 @@
   text-align: left;
 }
 
-.cb-mission-stats-missionrow {
+.cb-mission-stats-mission-row {
   text-align: center;
 }
 
