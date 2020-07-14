@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 
@@ -6,16 +6,22 @@ import "../../styles/mission-stats.css"
 import { Link } from "gatsby"
 
 const MissionStats = () => {
+  const [didViewCountUp, setDidViewCountUp] = useState(false);
+  const onVisibilityChange = isVisible => {
+      if (isVisible) {
+        setDidViewCountUp(true);
+      }
+    }
   return (
     <div className="cb-mission-stats-bg">
       <div className="container">
         <div className="cb-mission-stats-m">
-          <div className="row cb-mission-row">
+          <div className="row cb-mission-stats-mission-row">
           <div className="col-md-12">
             <h1 className="cb-mission-stats-title">
               OUR MISSION
             </h1>
-            <div className="cb-mission">
+            <div className="cb-mission-stats-mission">
               <p className="cb-mission-stats-description">
                 We are a software development club that strives to
                 build a community where passionate and driven engineers
@@ -34,53 +40,37 @@ const MissionStats = () => {
         </div>
       </div>
       <div className="cb-mission-stats-s">
-        <div className="cb-stats">
-          <div className="row cb-stats-row">
-            <div className="col cb-stat">
+        <div className="cb-mission-stats-stats">
+          <div className="row cb-mission-stats-stats-row">
+            <div className="col cb-mission-stats-stat">
               <div className="cb-mission-stats-number">
-                <CountUp end={5} duration={2.75} redraw={true}>
-                  {({ countUpRef, start }) => (
-                      <VisibilitySensor onChange={start} delayedCall>
-                          <span ref={countUpRef} />
-                      </VisibilitySensor>
-                  )}
-                  </CountUp>
+                <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
+                  <CountUp start={0} end={didViewCountUp ? 5 : 0} duration={2.75} />
+                </VisibilitySensor>
               </div>
               <div className="cb-mission-stats-text">projects every semester</div>
               </div>
-              <div className="col cb-stat">
+              <div className="col cb-mission-stats-stat">
                 <div className="cb-mission-stats-number">
-                  <CountUp end={12} duration={2.75} redraw={true}>
-                    {({ countUpRef, start }) => (
-                        <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                        </VisibilitySensor>
-                    )}
-                    </CountUp>
+                  <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
+                    <CountUp start={0} end={didViewCountUp ? 12 : 0} duration={2.75} />
+                  </VisibilitySensor>
                 </div>
                 <div className="cb-mission-stats-text">weeks of agile development</div>
               </div>
-              <div className="col cb-stat">
+              <div className="col cb-mission-stats-stat">
                 <div className="cb-mission-stats-number">
-                  <CountUp end={25} duration={2.75} redraw={true}>
-                    {({ countUpRef, start }) => (
-                        <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                        </VisibilitySensor>
-                    )}
-                    </CountUp>
+                  <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
+                    <CountUp start={0} end={didViewCountUp ? 25 : 0} duration={2.75} />
+                  </VisibilitySensor>
                 </div>
                 <div className="cb-mission-stats-text">completed projects and counting</div>
               </div>
-              <div className="col cb-stat">
+              <div className="col cb-mission-stats-stat">
                 <div className="cb-mission-stats-number">
-                  <CountUp end={46} duration={2.75} redraw={true}>
-                    {({ countUpRef, start }) => (
-                        <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                        </VisibilitySensor>
-                    )}
-                    </CountUp>
+                  <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
+                    <CountUp start={0} end={didViewCountUp ? 46 : 0} duration={2.75} />
+                  </VisibilitySensor>
                 </div>
                 <div className="cb-mission-stats-text">active members and over 100 alumni</div>
               </div>
