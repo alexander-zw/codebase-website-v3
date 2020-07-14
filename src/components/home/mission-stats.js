@@ -44,7 +44,7 @@ const MissionStats = () => {
           <div className="cb-mission-stats-s">
             <div className="cb-mission-stats-stats">
               <Row className="cb-mission-stats-stats-row">
-                <Col className="cb-mission-stats-stat">
+                <Col xs={6} md={3} className="cb-mission-stats-stat">
                   <div className="cb-mission-stats-number">
                     <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                       <CountUp start={0} end={didViewCountUp ? 5 : 0} duration={2.75} useEasing={true} />
@@ -52,7 +52,7 @@ const MissionStats = () => {
                   </div>
                   <div className="cb-mission-stats-text">projects every semester</div>
                 </Col>
-                <Col className="cb-mission-stats-stat">
+                <Col xs={6} md={3} className="cb-mission-stats-stat">
                   <div className="cb-mission-stats-number">
                     <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                       <CountUp start={0} end={didViewCountUp ? 12 : 0} duration={2.75} useEasing={true} />
@@ -60,7 +60,7 @@ const MissionStats = () => {
                   </div>
                   <div className="cb-mission-stats-text">weeks of agile development</div>
                 </Col>
-                <Col className="cb-mission-stats-stat">
+                <Col xs={6} md={3} className="cb-mission-stats-stat">
                   <div className="cb-mission-stats-number">
                     <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                       <CountUp start={0} end={didViewCountUp ? 25 : 0} duration={2.75} useEasing={true} />
@@ -68,7 +68,7 @@ const MissionStats = () => {
                   </div>
                   <div className="cb-mission-stats-text">completed projects and counting</div>
                 </Col>
-                <Col className="cb-mission-stats-stat">
+                <Col xs={6} md={3} className="cb-mission-stats-stat">
                   <div className="cb-mission-stats-number">
                     <VisibilitySensor onChange={onVisibilityChange} offset={{ bottom: 50 }} delayedCall>
                       <CountUp start={0} end={didViewCountUp ? 46 : 0} duration={2.75} useEasing={true} />
