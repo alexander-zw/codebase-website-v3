@@ -8,17 +8,16 @@
   src: url("../fonts/CircularStd-Bold.otf") format("opentype");
 }
 
-.beyond-container {
-  max-width: 1050px;
+.cb-beyond-container {
   padding-bottom: 48px;
 }
 
-.beyond-text-box {
+.cb-beyond-text-box {
   margin: 0;
   max-width: 650px;
 }
 
-.beyond-title {
+.cb-beyond-title {
   font-size: 24px;
   font-family: "Circular Std Book", sans-serif;
   color: #000000;
@@ -26,32 +25,32 @@
   padding-top: 48px;
 }
 
-.beyond-text {
+.cb-beyond-text {
   font-size: 15px;
   font-family: "Circular Std Book", sans-serif;
   color: #80868b;
   margin-bottom: 32px;
 }
 
-.logo {
+.cb-beyond-logo {
   width: 100px;
   margin: 0px 32px 40px 8px;
   border: none;
 }
 
-.small {
+.cb-beyond-small {
   width: 80px;
 }
 
-.big {
+.cb-beyond-big {
   width: 120px;
 }
 
-.logo-image {
+.cb-beyond-logo-image {
   display: block;
 }
 
-.logo-group {
+.cb-beyond-logo-group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
