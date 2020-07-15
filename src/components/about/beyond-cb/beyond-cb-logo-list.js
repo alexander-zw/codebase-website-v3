@@ -11,6 +11,7 @@ const CompanyLogoList = ({ companies }) => {
             key={element.name}
             name={element.name}
             src={element.src}
+            size={element.size}
           />
         )
       })}

@@ -2,8 +2,9 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../../../styles/beyond-cb.css"
+import { LogoSize } from "../../../constants"
 
-const CompanyLogo = ({ src, name }) => (
+const CompanyLogo = ({ src, name, size }) => (
   // Load image using gatsby-image
   <StaticQuery
     query={graphql`
@@ -27,7 +28,7 @@ const CompanyLogo = ({ src, name }) => (
       const image = data.images.edges.find(n => {
         return n.node.relativePath.includes(src)
       })
-      // If failed to load image, display the company name.
+
       if (!image) {
         return (
           <div className="cb-beyond-logo">
@@ -37,14 +38,10 @@ const CompanyLogo = ({ src, name }) => (
       }
 
       var logoSize = "cb-beyond-logo"
-      if (name === "ea" || name === "salesforce" || name === "stripe") {
+
+      if (src === LogoSize.SMALL) {
         logoSize += " cb-beyond-small"
-      } else if (
-        name === "robinhood" ||
-        name === "facebook" ||
-        name === "microsoft" ||
-        name === "mongo"
-      ) {
+      } else if (src === LogoSize.LARGE) {
         logoSize += " cb-beyond-big"
       }
 
