@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Navbar, Nav } from "react-bootstrap"
+import Container from "react-bootstrap/Container"
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
 
 import { Theme } from "../constants"
 import "../styles/nav-bar.css"
@@ -33,7 +35,7 @@ const NavBar = ({ theme }) => {
         className={`cb-nav-bar-navbar ${getBackgroundClass(theme)}`}
         expand="lg"
       >
-        <div className="container">
+        <Container>
           <Navbar.Brand className="cb-nav-bar-navbar-brand">
             <Link to="/">
               {theme === Theme.LIGHT ? (
@@ -113,7 +115,7 @@ const NavBar = ({ theme }) => {
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
-        </div>
+        </Container>
       </Navbar>
     </header>
   )
