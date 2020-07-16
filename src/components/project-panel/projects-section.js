@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectCard from "./project-card"
 
-import "../styles/projects-section.css"
+import "../../styles/project-panel.css"
 
 const ProjectsSection = ({ heading, description, client }) => {
   const currentProjects = useStaticQuery(graphql`

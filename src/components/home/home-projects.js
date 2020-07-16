@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import ProjectsSection from "../projects-section"
+import ProjectsSection from "../project-panel/projects-section"
 import Container from "react-bootstrap/Container"
 
 import "../../styles/home-projects.css"
