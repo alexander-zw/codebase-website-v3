@@ -9,7 +9,7 @@ const MemberPanel = () => {
     <div className="cb-member-page-container">
       <Container>
         <MemberList title={"Executive Team"} members={Exec}></MemberList>
-        <MemberList title={"Product Managers"} members={PMs}></MemberList>
+        <MemberList title={"Project Managers"} members={PMs}></MemberList>
       </Container>
     </div>
   )
