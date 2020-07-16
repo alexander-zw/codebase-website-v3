@@ -1,10 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import "../../../styles/member-panel.css"
 
-import "../styles/member.css"
-
-const Member = ({src, title, name}) => (
+const Member = ({ src, title, name }) => (
   // Load image using gatsby-image
   <StaticQuery
     query={graphql`
@@ -27,15 +26,15 @@ const Member = ({src, title, name}) => (
     render={data => {
       const image = data.images.edges.find(n => {
         return n.node.relativePath.includes(src)
-	  })
-	  // If failed to load image, display the member without an image.
+      })
+      // If failed to load image, display the member without an image.
       if (!image) {
         return (
-          <div className="member">
-            <div className="member-wrapper">
-              <div className="member-overlay">
-                <div className="member-title">{title}</div>
-                <div className="member-name">{name}</div>
+          <div className="cb-member">
+            <div className="cb-member-wrapper">
+              <div className="cb-member-overlay">
+                <div className="cb-member-title">{title}</div>
+                <div className="cb-member-name">{name}</div>
               </div>
             </div>
           </div>
@@ -43,16 +42,16 @@ const Member = ({src, title, name}) => (
       }
 
       return (
-        <div className="member">
-          <div className="member-wrapper">
+        <div className="cb-member">
+          <div className="cb-member-wrapper">
             <Img
-              className="member-image"
+              className="cb-member-image"
               alt={name}
               fluid={image.node.childImageSharp.fluid}
             />
-            <div className="member-overlay">
-              <div className="member-title">{title}</div>
-              <div className="member-name">{name}</div>
+            <div className="cb-member-overlay">
+              <div className="cb-member-title">{title}</div>
+              <div className="cb-member-name">{name}</div>
             </div>
           </div>
         </div>
