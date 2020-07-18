@@ -1,20 +1,15 @@
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
-}
-
 .cb-home-header-title {
-  font-size: 38px;
-  font-family: "Circular Std Book", sans-serif;
+  font-size: 48px;
+  font-family: "Inter-SemiBold";
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 20%;
 }
 
 .cb-home-header-subtitle {
-  font-size: 15px;
-  font-family: "Circular Std Book", sans-serif;
-  color: #ffffff;
+  font-size: 14px;
+  font-family: "Inter-Medium";
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .cb-home-header-image {
@@ -22,8 +17,8 @@
 }
 
 .cb-home-header-button {
-  font-size: 15px;
-  border-radius: 3px;
+  font-size: 13px;
+  border-radius: 20px;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.5rem;
@@ -31,7 +26,7 @@
   margin-right: 14px;
   margin-left: 0px;
   margin-bottom: 14px;
-  font-family: "Circular Std Book", sans-serif;
+  font-family: "Inter-Medium";
 }
 
 .cb-home-header-button:hover {
@@ -48,15 +43,10 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0);
   color: #ffffff;
-  border-width: 2px;
-  border-style: solid;
 }
 
 .cb-home-header-about {
   background-color: rgba(255, 255, 255, 0);
-  border-color: rgba(255, 255, 255, 0.3);
-  border-width: 2px;
-  border-style: solid;
   color: #ffffff;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -75,44 +65,28 @@
 .cb-home-header-bg {
   background-color: #336ee2;
   width: 100%;
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
 }
 
 @media only screen and (max-width: 479px) {
-  .cb-home-header-bg {
-    padding-bottom: 10vh;
-  }
-
   .cb-home-header-title {
     margin-top: 0%;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .cb-home-header-bg {
-    padding-bottom: 10vh;
-  }
-
   .cb-home-header-title {
     margin-top: 0%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cb-home-header-bg {
-    padding-bottom: 10vh;
-  }
-
   .cb-home-header-title {
     margin-top: 5%;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .cb-home-header-bg {
-    padding-bottom: 15vh;
-  }
-
   .cb-home-header-title {
     margin-top: 20%;
   }
