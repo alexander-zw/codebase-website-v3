@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Theme } from "../constants"
 import HomeHeader from "../components/home/home-header"
-import MissionStats from "../components/home/mission-stats"
+import HomeMission from "../components/home/home-mission"
 import HomeProjects from "../components/home/home-projects"
 import HomeTestimonials from "../components/home/home-testimonials"
 
@@ -12,7 +12,7 @@ const IndexPage = ({ location }) => {
     <Layout theme={Theme.DEFAULT}>
       <SEO title="Home" />
       <HomeHeader />
-      <MissionStats />
+      <HomeMission />
       <HomeProjects />
       <HomeTestimonials />
     </Layout>
