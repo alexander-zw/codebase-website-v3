@@ -37,7 +37,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="mb-3">
+            <div className="mb-2">
               <a
                 className="cb-footer-social-link"
                 href="https://www.facebook.com/berkeleycodebase/"
@@ -53,7 +53,7 @@ const Footer = () => {
                 Facebook
               </a>
             </div>
-            <div className="mb-3">
+            <div className="mb-2">
               <a
                 className="cb-footer-social-link"
                 href="https://www.instagram.com/berkeleycodebase/"
@@ -69,7 +69,7 @@ const Footer = () => {
                 Instagram
               </a>
             </div>
-            <div className="mb-3">
+            <div className="mb-4">
               <a
                 className="cb-footer-social-link"
                 href="https://medium.com/berkeley-codebase"
@@ -89,28 +89,23 @@ const Footer = () => {
           <Col md={7} className="mx-auto">
             <Row>
               <Col md={4} className="mx-auto">
-                <div className="cb-footer-title mt-3 mb-3">General</div>
-                <div className="mt-3 mb-3">
+                <div className="cb-footer-title mt-2 mb-2">General</div>
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/about">
                     About
                   </Link>
                 </div>
-                <div className="mt-3 mb-3">
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/about">
                     Team
                   </Link>
                 </div>
-                <div className="mt-3 mb-3">
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/projects">
                     Projects
                   </Link>
                 </div>
-                <div className="mt-3 mb-3">
-                  <Link className="cb-footer-link" to="/contact">
-                    Contact Us
-                  </Link>
-                </div>
-                <div className="cb-footer-link-container mt-3 mb-3">
+                <div className="cb-footer-link-container mt-2 mb-4">
                   <a
                     className="cb-footer-link"
                     href="https://medium.com/berkeley-codebase"
@@ -121,31 +116,41 @@ const Footer = () => {
                 </div>
               </Col>
               <Col md={4} className="mx-auto">
-                <div className="cb-footer-title mt-3 mb-3">Students</div>
-                <div className="mt-3 mb-3">
+                <div className="cb-footer-title mt-2 mb-2">Students</div>
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/apply">
                     Apply
                   </Link>
                 </div>
-                <div className="mt-3 mb-3">
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/projects">
                     Process
                   </Link>
                 </div>
-                <div className="mt-3 mb-3">
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/contact">
-                    FAQ
+                    FAQs
+                  </Link>
+                </div>
+                <div className="mt-2 mb-4">
+                  <Link className="cb-footer-link" to="/contact">
+                    Contact Us
                   </Link>
                 </div>
               </Col>
               <Col md={4} className="mx-auto">
-                <div className="cb-footer-title mt-3 mb-3">Companies</div>
-                <div className="mt-3 mb-3">
+                <div className="cb-footer-title mt-2 mb-2">Companies</div>
+                <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/projects">
                     Projects
                   </Link>
                 </div>
-                <div className="mt-3 mb-3">
+                <div className="mt-2 mb-2">
+                  <Link className="cb-footer-link" to="/contact">
+                    FAQs
+                  </Link>
+                </div>
+                <div className="mt-2 mb-4">
                   <Link className="cb-footer-link" to="/contact">
                     Contact Us
                   </Link>

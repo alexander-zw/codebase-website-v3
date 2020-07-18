@@ -1,16 +1,6 @@
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Circular Std Bold";
-  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-}
-
 footer {
   width: 100%;
-  background-color: rgba(193, 200, 209, 0.15);
+  background-color: F6F7F8;
 }
 
 .cb-footer-container {
@@ -20,8 +10,8 @@ footer {
 }
 
 .cb-footer-disclaimer {
-  font-size: 12px;
-  font-family: "Circular Std Book", sans-serif;
+  font-size: 11px;
+  font-family: "Inter-Regular";
   color: #80868b;
 }
 
@@ -41,20 +31,20 @@ footer {
 }
 
 .cb-footer-title {
-  font-size: 15px;
-  font-family: "Circular Std Bold", sans-serif;
+  font-size: 13px;
+  font-family: "Inter-Medium";
   color: #2f2f30;
 }
 
 .cb-footer-link {
-  font-size: 15px;
-  font-family: "Circular Std Book", sans-serif;
-  color: #2f2f30;
+  font-size: 13px;
+  font-family: "Inter-Medium";
+  color: rgba(47, 47, 48, 0.6);
 }
 
 .cb-footer-social-link {
-  font-size: 15px;
-  font-family: "Circular Std Book", sans-serif;
+  font-size: 13px;
+  font-family: "Inter-Medium";
   color: #2f2f30;
 }
 
