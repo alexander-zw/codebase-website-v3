@@ -5,6 +5,7 @@ import { Theme } from "../constants"
 import HomeHeader from "../components/home/home-header"
 import MissionStats from "../components/home/mission-stats"
 import HomeProjects from "../components/home/home-projects"
+import HomeTestimonials from "../components/home/home-testimonials"
 
 const IndexPage = ({ location }) => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = ({ location }) => {
       <HomeHeader />
       <MissionStats />
       <HomeProjects />
+      <HomeTestimonials />
     </Layout>
   )
 }

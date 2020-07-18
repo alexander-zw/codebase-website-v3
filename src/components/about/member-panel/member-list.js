@@ -1,18 +1,17 @@
 import React from "react"
-import Layout from "../components/layout"
-import Member from "../components/member"
-import "../styles/member-list.css"
+import Member from "./member"
+import "../../../styles/member-panel.css"
 
-const MemberList = ({ members, title }) => {
+const MemberPanel = ({ members, title }) => {
   return (
-    <div className="member-container">
+    <div className="cb-member-container">
       <h1>{title}</h1>
 
-      <div className="member-group">
+      <div className="cb-member-group">
         {members.map(element => {
           return (
             <Member
-			  key={element.name}
+              key={element.name}
               name={element.name}
               title={element.position}
               src={element.src}
@@ -24,4 +23,4 @@ const MemberList = ({ members, title }) => {
   )
 }
 
-export default MemberList
+export default MemberPanel

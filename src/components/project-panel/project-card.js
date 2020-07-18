@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Col from "react-bootstrap/col"
+import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 
-import "../styles/project-card.css"
+import "../../styles/project-panel.css"
 
 const ProjectCard = ({
   logoUrl,

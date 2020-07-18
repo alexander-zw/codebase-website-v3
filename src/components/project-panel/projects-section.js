@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Row from "react-bootstrap/row"
-import Col from "react-bootstrap/col"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectCard from "./project-card"
 
-import "../styles/projects-section.css"
+import "../../styles/project-panel.css"
 
 const ProjectsSection = ({ heading, description, client }) => {
   const currentProjects = useStaticQuery(graphql`
