@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+.cb-mission-stats-title {
+  font-size: 13px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #80868B;
+  text-align: center;
+  padding-bottom: 1.2vh;
+}
+
+.cb-mission-stats-mission {
+  width: 60%;
+  margin: auto;
+}
+
+.cb-mission-stats-stats {
+  width: 80%;
+  margin-left: 13.5%;
+}
+
+.cb-mission-stats-description {
+  font-size: 26px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #2F2F30;
+  text-align: center;
+}
+
+.cb-mission-stats-more {
+  max-width: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #F77D73;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.cb-mission-stats-more:hover {
+  opacity: 0.8;
+  color: #90423C;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+}
+
+.cb-mission-stats-end {
+  text-align: center;
+}
+
+.cb-mission-stats-m {
+  text-align: center;
+  padding-bottom: 6vh;
+}
+
+.cb-mission-stats-s {
+  text-align: center;
+}
+
+.cb-mission-stats-stat {
+  min-width: 140px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cb-mission-stats-number {
+  font-size: 95px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #F77B6F;
+  text-align: left;
+}
+
+.cb-mission-stats-text {
+  font-size: 16px;
+  font-family: "Circular Std Book", sans-serif;
+  color: #80868B;
+  width: 170px;
+  text-align: left;
+}
+
+.cb-mission-stats-mission-row {
+  text-align: center;
+}
+
+.cb-mission-stats-stats-row {
+  text-align: center;
+  min-width: 140px;
+  margin-top: 30px;
+}
+
+.cb-mission-stats-bg {
+  margin-top: 4vh;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 15vh;
+}
+
+.cb-mission-stats-divider {
+  border: 0.5px solid #C1C8D1;
+  margin-bottom: 15vh;
+}
+
+@media only screen and (max-width: 479px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-mission-stats-stat {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+
+  .cb-mission-stats-m {
+    padding-bottom: 6%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+
+  .cb-mission-stats-m {
+    padding-bottom: 6%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 10vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+
+  .cb-mission-stats-m {
+    padding-bottom: 6%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cb-mission-stats-bg {
+    padding-bottom: 15vh;
+  }
+
+  .cb-mission-stats-title {
+    margin-top: 10%;
+  }
+}
