@@ -22,7 +22,7 @@ const HomeProjects = () => {
         />
 
         <Link className="cb-blue-link" to="projects">
-          Read more about the client experience →
+          Read about the client experience →
         </Link>
 
         <ProjectsSection
@@ -40,7 +40,7 @@ const HomeProjects = () => {
           href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
           target="_source"
         >
-          Read more about the mentored experience →
+          Read about the mentored experience →
         </a>
       </Container>
     </div>
