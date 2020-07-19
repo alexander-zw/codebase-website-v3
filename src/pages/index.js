@@ -6,6 +6,7 @@ import HomeHeader from "../components/home/home-header"
 import HomeMission from "../components/home/home-mission"
 import HomeProjects from "../components/home/home-projects"
 import HomeTestimonials from "../components/home/home-testimonials"
+import HomeInvolved from "../components/home/home-involved"
 
 const IndexPage = ({ location }) => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = ({ location }) => {
       <HomeHeader />
       <HomeMission />
       <HomeProjects />
+      <HomeInvolved />
       <HomeTestimonials />
     </Layout>
   )
