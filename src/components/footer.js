@@ -89,7 +89,7 @@ const Footer = () => {
           <Col md={7} className="mx-auto">
             <Row>
               <Col md={4} className="mx-auto">
-                <div className="cb-footer-title mt-2 mb-2">General</div>
+                <div className="cb-footer-title mt-3 mb-2">General</div>
                 <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/about">
                     About
@@ -116,7 +116,7 @@ const Footer = () => {
                 </div>
               </Col>
               <Col md={4} className="mx-auto">
-                <div className="cb-footer-title mt-2 mb-2">Students</div>
+                <div className="cb-footer-title mt-3 mb-2">Students</div>
                 <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/apply">
                     Apply
@@ -139,7 +139,7 @@ const Footer = () => {
                 </div>
               </Col>
               <Col md={4} className="mx-auto">
-                <div className="cb-footer-title mt-2 mb-2">Companies</div>
+                <div className="cb-footer-title mt-3 mb-2">Companies</div>
                 <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/projects">
                     Projects
