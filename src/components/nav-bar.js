@@ -110,7 +110,7 @@ const NavBar = ({ theme }) => {
                   )}`}
                   to="/apply"
                 >
-                  Apply
+                  Apply →
                 </Link>
               </Nav.Item>
             </Nav>

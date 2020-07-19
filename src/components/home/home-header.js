@@ -13,7 +13,7 @@ const HomeHeader = () => {
     <div className="cb-home-header-bg">
       <Container>
         <Row className="cb-home-header-row">
-          <Col md={4}>
+          <Col lg={4} md={6}>
             <h1 className="cb-home-header-title">
               We are a community of{" "}
               <TextLoop
@@ -33,17 +33,17 @@ const HomeHeader = () => {
                 className="cb-home-header-button cb-home-header-apply"
                 to="/apply"
               >
-                Apply
+                Apply →
               </Link>
               <Link
                 className="cb-home-header-button cb-home-header-about"
                 to="/about"
               >
-                Learn More
+                Learn More →
               </Link>
             </div>
           </Col>
-          <Col md={8}>
+          <Col lg={8} md={6}>
             <img
               src={homeHeaderImage}
               alt="Working together here"

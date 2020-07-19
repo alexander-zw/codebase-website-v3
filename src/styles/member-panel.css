@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
-}
-
 .cb-member-page-container {
-  background: rgba(193, 200, 209, 0.15);
+  background-color: #f6f7f8;
   padding-bottom: 20px;
 }
 
@@ -21,10 +16,10 @@
 }
 
 .cb-member-container h1 {
-  font-family: "Circular Std Book", sans-serif;
+  font-family: "Inter-SemiBold";
   text-align: center;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 30px;
   padding: 15px;
 }

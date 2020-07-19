@@ -1,11 +1,5 @@
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
-}
-
 .cb-projects-section {
-  margin: 15px 0 10px;
-  padding-bottom: 5px;
+  margin: 20px 0 10px;
 }
 
 .cb-projects-section-header {
@@ -16,14 +10,14 @@
   margin-top: 10px;
   margin-bottom: 13px;
   color: #2f2f30;
-  font-size: 17px;
-  line-height: 22px;
+  font-size: 24px;
+  font-family: "Inter-SemiBold";
 }
 
 .cb-projects-section-blurb {
   color: #80868b;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 14px;
+  font-family: "Inter-Medium";
 }
 
 .cb-project-col {
@@ -38,8 +32,8 @@
 
 .cb-project-card-body {
   padding: 25px 35px 30px;
-  font-family: "Circular Std Book", sans-serif;
-  font-size: 15px;
+  font-family: "Inter-Medium";
+  font-size: 13px;
 }
 
 .cb-project-logo {

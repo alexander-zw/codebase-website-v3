@@ -1,0 +1,92 @@
+.cb-home-mission-title {
+  font-size: 13px;
+  font-family: "Inter-Medium";
+  color: rgba(47, 47, 48, 0.6);
+  text-align: left;
+  padding-bottom: 1.5vh;
+}
+
+.cb-home-mission-mission {
+  max-width: 715px;
+}
+
+.cb-home-mission-description {
+  font-size: 24px;
+  font-family: "Inter-SemiBold";
+  color: #2f2f30;
+  text-align: left;
+}
+
+.cb-home-mission-more {
+  font-size: 14px;
+  font-family: "Inter-Medium";
+}
+
+.cb-home-mission-stat {
+  min-width: 140px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.cb-home-mission-number {
+  font-size: 72px;
+  font-family: "Inter-SemiBold";
+  color: #336ee2;
+}
+
+.cb-home-mission-text {
+  font-size: 14px;
+  font-family: "Inter-Medium";
+  color: rgba(47, 47, 48, 0.6);
+  width: 130px;
+}
+
+.cb-home-mission-text-long {
+  width: 140px;
+}
+
+.cb-home-mission-stats-row {
+  text-align: center;
+  min-width: 140px;
+  margin-top: 30px;
+}
+
+.cb-home-mission-bg {
+  background-color: #f6f7f8;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 479px) {
+  .cb-home-mission-bg {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .cb-home-mission-stat {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .cb-home-mission-bg {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cb-home-mission-bg {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cb-home-mission-bg {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}

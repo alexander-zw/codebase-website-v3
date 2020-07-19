@@ -58,16 +58,19 @@ footer {
   margin-top: auto;
 }
 
-.cb-orange-link {
-  color: #f77b6f;
-  font-size: 15px;
-  text-decoration-line: underline;
-  line-height: 28px;
+.container {
+  max-width: 1000px;
 }
 
-.cb-orange-link:hover {
+.cb-blue-link {
+  color: #336ee2;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.cb-blue-link:hover {
+  text-decoration-line: none;
   opacity: 0.8;
-  color: #f77b6f;
   transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;
   -webkit-transition: opacity 0.2s ease-out;
