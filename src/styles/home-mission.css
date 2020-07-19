@@ -54,8 +54,8 @@
 .cb-home-mission-bg {
   background-color: #f6f7f8;
   width: 100%;
-  padding-bottom: 150px;
-  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -86,7 +86,7 @@
 
 @media only screen and (min-width: 992px) {
   .cb-home-mission-bg {
-    padding-bottom: 150px;
-    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
 }

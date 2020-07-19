@@ -21,6 +21,10 @@ const HomeProjects = () => {
           client={true}
         />
 
+        <Link className="cb-blue-link" to="projects">
+          Read more about the client experience →
+        </Link>
+
         <ProjectsSection
           heading="Mentored Project"
           description={
@@ -31,9 +35,13 @@ const HomeProjects = () => {
           client={false}
         />
 
-        <Link className="cb-blue-link" to="projects">
-          Check out how each project works →
-        </Link>
+        <a
+          className="cb-blue-link"
+          href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
+          target="_source"
+        >
+          Read more about the mentored experience →
+        </a>
       </Container>
     </div>
   )
