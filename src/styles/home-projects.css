@@ -1,19 +1,18 @@
-@font-face {
-  font-family: "Circular Std Book";
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+.cb-home-projects-container {
+  width: 100%;
+  background-color: #f6f7f8;
 }
 
 .cb-home-projects {
-  font-family: "Circular Std Book", sans-serif;
-  font-weight: 450;
-  max-width: 780px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  font-family: "Inter-Medium";
+  font-size: 13px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .cb-home-projects-title {
-  color: #80868b;
-  font-size: 15px;
+  color: rgba(47, 47, 48, 0.6);
+  font-size: 13px;
   line-height: 18px;
   margin-top: 5%;
   margin-bottom: 0;
