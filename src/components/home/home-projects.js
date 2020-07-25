@@ -15,8 +15,7 @@ const HomeProjects = () => {
         <ProjectsSection
           heading="Client Projects"
           description={
-            "Our client teams work with industry partners to build products " +
-            "ranging from full stack web development to machine learning."
+            "Our client teams work with industry partners to build products ranging from full stack web development to machine learning."
           }
           client={true}
         />
@@ -28,9 +27,7 @@ const HomeProjects = () => {
         <ProjectsSection
           heading="Mentored Project"
           description={
-            "Our mentored team focuses on learning the essentials of " +
-            "software development and simultaneously develops an full-stack " +
-            "web application for a non-profit organization."
+            "Our mentored team focuses on learning the essentials of software development and simultaneously develops an full-stack web application for a non-profit organization."
           }
           client={false}
         />

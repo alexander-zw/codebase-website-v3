@@ -8,13 +8,6 @@
 .cb-club-structure-row-container {
   padding: 20px;
   width: 100%;
-  overflow: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.cb-club-structure-row-container::-webkit-scrollbar {
-  display: none;
 }
 
 .cb-club-structure-title {
@@ -27,6 +20,7 @@
 .cb-club-structure-card {
   border-radius: 5px;
   transition: transform 0.2s;
+  cursor: grab;
 }
 
 .cb-club-structure-card:hover {
