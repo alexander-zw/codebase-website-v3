@@ -5,6 +5,7 @@ import { Theme } from "../constants"
 import HomeHeader from "../components/home/home-header"
 import HomeMission from "../components/home/home-mission"
 import CurrentProjects from "../components/current-projects"
+import HomeExperiences from "../components/home/home-experiences"
 import HomeTestimonials from "../components/home/home-testimonials"
 import HomeInvolved from "../components/home/home-involved"
 
@@ -14,6 +15,7 @@ const IndexPage = ({ location }) => {
       <SEO title="Home" />
       <HomeHeader />
       <HomeMission />
+      <HomeExperiences />
       <CurrentProjects />
       <HomeInvolved />
       <HomeTestimonials />
