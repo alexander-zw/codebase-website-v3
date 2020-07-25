@@ -1,14 +1,3 @@
-.cb-home-experiences-container {
-  margin-right: 0;
-  max-width: none;
-}
-
-.cb-home-experiences-row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  scroll-snap-type: x mandatory;
-}
-
 .cb-home-experiences-wrapper-col {
   display: flex;
   flex-wrap: nowrap;
@@ -31,17 +20,10 @@
 
 .cb-home-experiences-intro {
   font-size: 48px;
-  font-weight: 600;
+  font-family: "Inter-SemiBold";
   color: #2f2f30;
   display: grid;
   height: 100%;
-}
-
-.cb-home-experiences-intro-text {
-  width: 300px;
-  height: 200px;
-  line-height: 50px;
-  margin: auto;
 }
 
 .cb-home-experiences-even-photo,
@@ -60,17 +42,35 @@
 }
 
 .cb-home-experiences-col-blurb {
-  font-style: normal;
-  font-weight: 500;
+  font-family: "Inter-Medium";
   font-size: 14px;
   line-height: 20px;
   color: #80868b;
 }
 
 .cb-home-experiences-col-headline {
-  font-weight: 600;
+  font-family: "Inter-SemiBold";
   font-size: 24px;
   line-height: 29px;
+}
+
+.cb-home-experiences-swipe {
+  font-family: "Inter-Regular";
+  font-size: 13px;
+  color: #80868b;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -78,5 +78,47 @@
   .cb-home-experiences-even-col,
   .cb-home-experiences-odd-col {
     scroll-snap-align: start;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cb-home-experiences-container {
+    margin-right: 0;
+    max-width: none;
+  }
+
+  .cb-home-experiences-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+  }
+
+  .cb-home-experiences-intro-text {
+    width: 300px;
+    height: 200px;
+    line-height: 50px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cb-home-experiences-container {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .cb-home-experiences-row {
+    height: 100%;
+    padding: 0 0 0 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .cb-home-experiences-intro-text {
+    width: 300px;
+    height: 200px;
+    line-height: 50px;
   }
 }
