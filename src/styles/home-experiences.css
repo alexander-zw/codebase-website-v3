@@ -19,17 +19,14 @@
 .cb-home-experiences-odd-col {
   display: inline-block;
   float: none;
-  /* max-width: 618px; */
 }
 
 .cb-home-experiences-even-col {
   padding: 92px 43px 137px;
-  /* max-width: 360px; */
 }
 
 .cb-home-experiences-odd-col {
   padding: 282px 43px 107px;
-  /* max-width: 420px; */
 }
 
 .cb-home-experiences-intro {
