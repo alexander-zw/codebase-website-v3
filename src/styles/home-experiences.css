@@ -1,0 +1,85 @@
+.cb-home-experiences-container {
+  margin-right: 0;
+  max-width: none;
+}
+
+.cb-home-experiences-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.cb-home-experiences-wrapper-col {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.cb-home-experiences-col,
+.cb-home-experiences-even-col,
+.cb-home-experiences-odd-col {
+  display: inline-block;
+  float: none;
+  /* max-width: 618px; */
+}
+
+.cb-home-experiences-even-col {
+  padding: 92px 43px 137px;
+  /* max-width: 360px; */
+}
+
+.cb-home-experiences-odd-col {
+  padding: 282px 43px 107px;
+  /* max-width: 420px; */
+}
+
+.cb-home-experiences-intro {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2f2f30;
+  display: grid;
+  height: 100%;
+}
+
+.cb-home-experiences-intro-text {
+  width: 300px;
+  height: 200px;
+  line-height: 50px;
+  margin: auto;
+}
+
+.cb-home-experiences-even-photo,
+.cb-home-experiences-odd-photo {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.cb-home-experiences-even-text {
+  margin-top: 29px;
+}
+
+.cb-home-experiences-odd-text {
+  margin-bottom: 37px;
+}
+
+.cb-home-experiences-col-blurb {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #80868b;
+}
+
+.cb-home-experiences-col-headline {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media only screen and (max-width: 575px) {
+  .cb-home-experiences-col,
+  .cb-home-experiences-even-col,
+  .cb-home-experiences-odd-col {
+    scroll-snap-align: start;
+  }
+}
