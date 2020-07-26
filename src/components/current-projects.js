@@ -70,7 +70,7 @@ const CurrentProjects = () => {
   const mentoredData = edges.filter(edge => !edge.node.data.Client)[0].node.data
 
   const mentoredCard = (
-    <Col lg={6} className="cb-current-projects-mentored-col">
+    <Col md={6} className="cb-current-projects-mentored-col">
       <div className={`cb-current-projects-mentored-card ${colorClass[0]}`}>
         <div className="cb-current-projects-card-body">
           <a
@@ -117,7 +117,7 @@ const CurrentProjects = () => {
         </div>
 
         <Row>
-          <Col lg={6}>
+          <Col md={6}>
             <div className="cb-current-projects-section">
               <div className="cb-current-projects-section-header">
                 <h2 className="cb-current-projects-section-title">
