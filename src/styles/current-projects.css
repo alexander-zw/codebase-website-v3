@@ -1,0 +1,129 @@
+.cb-current-projects-container {
+  width: 100%;
+  background-color: #f6f7f8;
+}
+
+.cb-current-projects {
+  font-family: "Inter-Medium";
+  font-size: 13px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.cb-current-projects-title {
+  color: rgba(47, 47, 48, 0.6);
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.cb-current-projects-section {
+  margin: 20px 0 10px;
+}
+
+.cb-current-projects-section-header {
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+.cb-current-projects-section-title {
+  margin-top: 10px;
+  margin-bottom: 13px;
+  color: #2f2f30;
+  font-size: 24px;
+  font-family: "Inter-SemiBold";
+}
+
+.cb-current-projects-section-blurb {
+  color: #80868b;
+  font-size: 14px;
+  font-family: "Inter-Medium";
+}
+
+.cb-current-projects-col {
+  padding: 10px;
+}
+
+.cb-current-projects-card,
+.cb-current-projects-mentored-card {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition: transform 0.2s;
+  cursor: default;
+}
+
+.cb-current-projects-card:hover,
+.cb-current-projects-mentored-card:hover {
+  transform: scale(1.03);
+  background-color: #000000;
+}
+
+.cb-current-projects-mentored-card {
+  min-height: 200px;
+}
+
+.cb-current-projects-card-body {
+  padding: 25px 35px 30px;
+  font-family: "Inter-Medium";
+  font-size: 13px;
+}
+
+.cb-current-projects-logo {
+  height: 30px;
+}
+
+.cb-current-projects-text {
+  font-style: normal;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.cb-current-projects-type {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.cb-current-projects-blue {
+  background-color: #336ee2;
+}
+
+.cb-current-projects-orange {
+  background-color: #f77b6f;
+}
+
+.cb-current-projects-navy {
+  background-color: #3b5c9d;
+}
+
+.cb-current-projects-green {
+  background-color: #36b37e;
+}
+
+.cb-current-projects-card-row {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cb-current-projects-mentored-col {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .cb-current-projects-card {
+    min-height: 200px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cb-current-projects-card {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cb-current-projects-card {
+    height: 250px;
+  }
+}
