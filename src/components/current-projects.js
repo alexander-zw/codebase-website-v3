@@ -3,10 +3,9 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import { CardColors } from "../constants"
 
+import { CardColors } from "../constants"
 import "../styles/current-projects.css"
-import "../styles/layout.css"
 
 const CurrentProjects = () => {
   const currentProjects = useStaticQuery(graphql`
@@ -39,16 +38,16 @@ const CurrentProjects = () => {
       return (
         <Col lg={3} md={6} sm={6} xs={12} className="cb-current-projects-col">
           <div
-            className={`cb-current-projects-card ${
+            className={`cb-card cb-current-projects-client-card ${
               CardColors[index % CardColors.length]
             }`}
           >
-            <div className="cb-current-projects-card-body">
-              <a target="_blank" rel="noopener noreferrer" href={Hyperlink}>
+            <div className="cb-card-body">
+              <a href={Hyperlink} target="_source">
                 <img
-                  className="cb-current-projects-logo"
                   src={Logo[0].url}
                   alt={Company}
+                  className="cb-current-projects-logo"
                 ></img>
               </a>
               <div className="cb-current-projects-type">
@@ -64,18 +63,16 @@ const CurrentProjects = () => {
   const mentoredData = edges.filter(edge => !edge.node.data.Client)[0].node.data
 
   const mentoredCard = (
-    <Col md={6} className="cb-current-projects-mentored-col">
-      <div className={`cb-current-projects-mentored-card ${CardColors[0]}`}>
-        <div className="cb-current-projects-card-body">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={mentoredData.Hyperlink}
-          >
+    <Col md={6} className="cb-current-projects-col">
+      <div
+        className={`cb-card cb-current-projects-mentored-card ${CardColors[0]}`}
+      >
+        <div className="cb-card-body">
+          <a href={mentoredData.Hyperlink} target="_source">
             <img
-              className="cb-current-projects-logo"
               src={mentoredData.Logo[0].url}
               alt={mentoredData.Company}
+              className="cb-current-projects-logo"
             ></img>
           </a>
           <div className="cb-current-projects-type">
@@ -88,50 +85,41 @@ const CurrentProjects = () => {
   )
 
   return (
-    <div className="cb-current-projects-container">
-      <Container className="cb-current-projects">
-        <h1 className="cb-current-projects-title">THIS SEMESTER'S PROJECTS</h1>
-
-        <div className="cb-current-projects-section">
-          <div className="cb-current-projects-section-header">
-            <h2 className="cb-current-projects-section-title">
-              Client Projects
-            </h2>
-            <p className="cb-current-projects-section-blurb">
-              Our client teams work with industry partners to build products
-              ranging from full stack web development to machine learning.
-            </p>
-          </div>
-
-          <Link className="cb-blue-link" to="projects">
-            Read about the client experience →
-          </Link>
-
-          <Row className="cb-current-projects-card-row"> {clientCards} </Row>
+    <div className="cb-wrapper-gray">
+      <Container>
+        <h1 className="cb-section-title">THIS SEMESTER'S PROJECTS</h1>
+        <div className="cb-current-projects-section-header">
+          <h2 className="cb-section-heading">Client Projects</h2>
+          <p className="cb-section-text">
+            Our client teams work with industry partners to build products
+            ranging from full stack web development to machine learning.
+          </p>
         </div>
+
+        <Link className="cb-link-blue" to="projects">
+          Read about the client experience →
+        </Link>
+
+        <Row className="cb-current-projects-card-row"> {clientCards} </Row>
 
         <Row>
           <Col md={6}>
-            <div className="cb-current-projects-section">
-              <div className="cb-current-projects-section-header">
-                <h2 className="cb-current-projects-section-title">
-                  Mentored Project
-                </h2>
-                <p className="cb-current-projects-section-blurb">
-                  Our mentored team focuses on learning the essentials of
-                  software development and simultaneously develops an full-stack
-                  web application for a non-profit organization.
-                </p>
-              </div>
-
-              <a
-                className="cb-blue-link"
-                href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
-                target="_source"
-              >
-                Read about the mentored experience →
-              </a>
+            <div className="cb-current-projects-section-header">
+              <h2 className="cb-section-heading">Mentored Project</h2>
+              <p className="cb-section-text">
+                Our mentored team focuses on learning the essentials of software
+                development and simultaneously develops an full-stack web
+                application for a non-profit organization.
+              </p>
             </div>
+
+            <a
+              className="cb-link-blue"
+              href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
+              target="_source"
+            >
+              Read about the mentored experience →
+            </a>
           </Col>
           {mentoredCard}
         </Row>

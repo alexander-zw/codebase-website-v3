@@ -1,8 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import "../../../styles/beyond-cb.css"
+
 import { LogoSize } from "../../../constants"
+import "../../../styles/beyond-cb.css"
 
 const CompanyLogo = ({ src, name, size }) => (
   // Load image using gatsby-image

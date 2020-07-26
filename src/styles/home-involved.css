@@ -1,19 +1,8 @@
-.cb-home-involved-container {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
 .cb-home-involved-title {
   font-family: "Inter-SemiBold";
   font-size: 20px;
   color: #2f2f30;
   margin-bottom: 10px;
-}
-
-.cb-home-involved-description {
-  font-family: "Inter-Medium";
-  font-size: 13px;
-  color: #80868b;
 }
 
 .cb-home-involved-heading {
@@ -24,7 +13,8 @@
 }
 
 .cb-home-involved-button {
-  font-size: 13px;
+  font-family: "Inter-Medium";
+  font-size: 14px;
   border-radius: 20px;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -33,11 +23,9 @@
   margin-right: 14px;
   margin-left: 0px;
   margin-bottom: 14px;
-  font-family: "Inter-Medium";
 }
 
-.cb-home-involved-button:hover,
-.cb-home-involved-link:hover {
+.cb-home-involved-button:hover {
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s ease-out;
@@ -63,22 +51,18 @@
   padding-right: 1.5rem;
 }
 
+.cb-home-involved-section-header {
+  margin-bottom: 50px;
+}
+
 .cb-home-involved-button-row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.cb-home-involved-link {
-  font-size: 13px;
-  font-family: "Inter-Medium";
-  color: #336ee2;
 }
 
 @media only screen and (max-width: 991px) {
   .cb-home-involved-button-row {
     margin-bottom: 40px;
-    margin-top: 0px;
   }
 }
 

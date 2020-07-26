@@ -1,12 +1,12 @@
 import React from "react"
-import TextLoop from "react-text-loop"
+import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
+import TextLoop from "react-text-loop"
 
-import "../../styles/home-header.css"
 import homeHeaderImage from "../../images/home-header-animation.gif"
-import { Link } from "gatsby"
+import "../../styles/home-header.css"
 
 const HomeHeader = () => {
   return (

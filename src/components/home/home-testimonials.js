@@ -1,7 +1,7 @@
 import React from "react"
-import Row from "react-bootstrap/Row"
-import Container from "react-bootstrap/Container"
 import { graphql, useStaticQuery } from "gatsby"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
 import ReactAliceCarousel from "react-alice-carousel"
 
 import "../../styles/home-testimonials.css"
@@ -54,7 +54,7 @@ const HomeTestimonials = () => {
   const handleOnDragStart = e => e.preventDefault()
 
   return (
-    <div className="cb-home-testimonials-bg">
+    <div className="cb-wrapper-blue">
       <Container className="cb-home-testimonials-container">
         <Row>
           <ReactAliceCarousel

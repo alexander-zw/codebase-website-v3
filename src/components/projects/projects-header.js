@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react"
-import Container from "react-bootstrap/Container"
 import { Link } from "gatsby"
+import Container from "react-bootstrap/Container"
 import { Parallax } from "react-parallax"
 
-import "../../styles/projects-header.css"
-
 import img from "../../images/projects-header-img.jpg"
+import "../../styles/projects-header.css"
 
 const ProjectsHeader = () => {
   const [width, setWidth] = useState(window.innerWidth)

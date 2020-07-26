@@ -4,10 +4,9 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import ScrollContainer from "react-indiana-drag-scroll"
-import { CardColors } from "../../constants"
 
+import { CardColors } from "../../constants"
 import "../../styles/club-structure.css"
-import "../../styles/layout.css"
 
 const ClubStructure = () => {
   const currentRoles = useStaticQuery(graphql`
@@ -32,11 +31,11 @@ const ClubStructure = () => {
     return (
       <Col
         sm={12}
-        className={`cb-club-structure-card ${
+        className={`cb-card cb-club-structure-card ${
           CardColors[index % CardColors.length]
         }`}
       >
-        <div className="cb-club-structure-card-body">
+        <div className="cb-card-body">
           <h2 className="cb-club-structure-card-title">{Role}</h2>
           <p className="cb-club-structure-card-text">{Text}</p>
         </div>
@@ -45,17 +44,17 @@ const ClubStructure = () => {
   })
 
   return (
-    <div className="cb-club-structure-container">
+    <div className="cb-wrapper-gray">
       <Container>
         <div className="cb-club-structure-header">
-          <h1 className="cb-club-structure-title">Club Structure</h1>
-          <p className="cb-club-structure-subtitle">
+          <h1 className="cb-section-heading">Club Structure</h1>
+          <p className="cb-section-text">
             Throughout their time in Codebase, our members take on a variety of
             positions. Our structure is relatively flat so that everybody has an
             active role in shaping our club.
           </p>
           <a
-            className="cb-blue-link cb-club-structure-link"
+            className="cb-link-blue"
             href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
             target="_source"
           >

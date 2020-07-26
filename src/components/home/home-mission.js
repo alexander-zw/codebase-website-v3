@@ -1,10 +1,10 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
-import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import CountUp from "react-countup"
 import VisibilitySensor from "react-visibility-sensor"
-import { Link } from "gatsby"
 
 import "../../styles/home-mission.css"
 
@@ -16,19 +16,19 @@ const HomeMission = () => {
     }
   }
   return (
-    <div className="cb-home-mission-bg">
+    <div className="cb-wrapper-gray">
       <Container>
-        <Row className="cb-home-mission-mission-row">
+        <Row className="cb-home-mission-heading-row">
           <Col md={12}>
-            <h1 className="cb-home-mission-title">ABOUT US</h1>
-            <div className="cb-home-mission-mission">
-              <p className="cb-home-mission-description">
+            <h1 className="cb-section-title">ABOUT US</h1>
+            <div className="cb-home-mission-section-header">
+              <p className="cb-section-heading">
                 We are a software development club that strives to build a
                 community where passionate and driven engineers can grow
                 together through meaningful industry initiatives.
               </p>
             </div>
-            <Link className="cb-blue-link cb-home-mission-more" to="/about">
+            <Link className="cb-link-blue cb-home-mission-more" to="/about">
               Learn more →
             </Link>
           </Col>

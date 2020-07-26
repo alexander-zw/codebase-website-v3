@@ -1,9 +1,9 @@
 import React from "react"
-
-import "../../../styles/base-behaviors.css"
-import { BaseBehavior } from "../../../constants"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+
+import { BaseBehavior } from "../../../constants"
+import "../../../styles/base-behaviors.css"
 
 const BaseBehaviorsImages = ({ baseBehavior }) => {
   const data = useStaticQuery(graphql`

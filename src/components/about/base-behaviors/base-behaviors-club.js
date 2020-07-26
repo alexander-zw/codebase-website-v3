@@ -1,8 +1,8 @@
 import React from "react"
-
-import "../../../styles/base-behaviors.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+
+import "../../../styles/base-behaviors.css"
 
 const BaseBehaviorsClub = () => {
   const data = useStaticQuery(graphql`

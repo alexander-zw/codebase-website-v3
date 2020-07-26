@@ -1,4 +1,5 @@
 import React from "react"
+
 import CompanyLogo from "./beyond-cb-logo"
 import "../../../styles/beyond-cb.css"
 

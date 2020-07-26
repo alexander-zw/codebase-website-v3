@@ -1,6 +1,6 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"

@@ -1,14 +1,14 @@
 import React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-import "../styles/footer.css"
 import fbLogo from "../images/footer/facebook-footer.png"
 import instaLogo from "../images/footer/instagram-footer.png"
 import medLogo from "../images/footer/medium-footer.png"
+import "../styles/footer.css"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
