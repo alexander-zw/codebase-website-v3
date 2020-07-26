@@ -12,6 +12,9 @@ const HomeExperiences = () => {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [])
+
+  const cutoff = 768
+
   const experiences = useStaticQuery(graphql`
     query {
       allAirtable(
@@ -67,7 +70,7 @@ const HomeExperiences = () => {
               </span>
             </p>
             <p>A glimpse into our community</p>
-            {width < 768 && (
+            {width < cutoff && (
               <p className="cb-home-experiences-swipe">
                 Swipe or scroll to explore →
               </p>
@@ -75,7 +78,7 @@ const HomeExperiences = () => {
           </div>
         </div>
       </Col>
-      {width > 480 ? (
+      {width >= cutoff ? (
         <Col xs={13} className="cb-home-experiences-wrapper-col">
           {renderedExperience}
         </Col>
@@ -88,7 +91,7 @@ const HomeExperiences = () => {
   return (
     <div>
       <Container fluid className="cb-home-experiences-container">
-        {width >= 768 ? (
+        {width >= cutoff ? (
           <HorizontalScroll>{renderedRowContent}</HorizontalScroll>
         ) : (
           renderedRowContent
