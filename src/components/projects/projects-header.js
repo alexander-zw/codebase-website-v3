@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Container from "react-bootstrap/Container"
 import { Link } from "gatsby"
 import { Parallax } from "react-parallax"
@@ -8,6 +8,12 @@ import "../../styles/projects-header.css"
 import img from "../../images/projects-header-img.jpg"
 
 const ProjectsHeader = () => {
+  const [width, setWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth))
+  }, [])
+
   return (
     <div>
       <div className="cb-projects-header-bg">
@@ -23,7 +29,7 @@ const ProjectsHeader = () => {
         </Container>
       </div>
       <Parallax bgImage={img} strength={200}>
-        <div style={{ height: 500 }} />
+        <div style={{ height: Math.max(500, (width * 1300) / 3072) }} />
       </Parallax>
     </div>
   )
