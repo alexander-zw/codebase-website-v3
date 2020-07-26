@@ -1,13 +1,13 @@
 .cb-current-projects-container {
   width: 100%;
   background-color: #f6f7f8;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .cb-current-projects {
   font-family: "Inter-Medium";
   font-size: 13px;
-  padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 .cb-current-projects-title {
@@ -83,22 +83,6 @@
   color: rgba(255, 255, 255, 0.7);
   margin-top: 16px;
   margin-bottom: 10px;
-}
-
-.cb-current-projects-blue {
-  background-color: #336ee2;
-}
-
-.cb-current-projects-orange {
-  background-color: #f77b6f;
-}
-
-.cb-current-projects-navy {
-  background-color: #3b5c9d;
-}
-
-.cb-current-projects-green {
-  background-color: #36b37e;
 }
 
 .cb-current-projects-card-row {

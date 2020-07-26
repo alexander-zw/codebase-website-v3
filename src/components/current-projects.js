@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import { CardColors } from "../constants"
 
 import "../styles/current-projects.css"
 import "../styles/layout.css"
@@ -29,13 +30,6 @@ const CurrentProjects = () => {
     }
   `)
 
-  const colorClass = [
-    "cb-current-projects-blue",
-    "cb-current-projects-navy",
-    "cb-current-projects-green",
-    "cb-current-projects-orange",
-  ]
-
   const { edges } = currentProjects.allAirtable
 
   const clientCards = edges
@@ -46,7 +40,7 @@ const CurrentProjects = () => {
         <Col lg={3} md={6} sm={6} xs={12} className="cb-current-projects-col">
           <div
             className={`cb-current-projects-card ${
-              colorClass[index % colorClass.length]
+              CardColors[index % CardColors.length]
             }`}
           >
             <div className="cb-current-projects-card-body">
@@ -71,7 +65,7 @@ const CurrentProjects = () => {
 
   const mentoredCard = (
     <Col md={6} className="cb-current-projects-mentored-col">
-      <div className={`cb-current-projects-mentored-card ${colorClass[0]}`}>
+      <div className={`cb-current-projects-mentored-card ${CardColors[0]}`}>
         <div className="cb-current-projects-card-body">
           <a
             target="_blank"

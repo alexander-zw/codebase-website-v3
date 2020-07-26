@@ -76,3 +76,19 @@ footer {
   -webkit-transition: opacity 0.2s ease-out;
   -o-transition: opacity 0.2s ease-out;
 }
+
+.cb-card-blue {
+  background-color: #336ee2;
+}
+
+.cb-card-orange {
+  background-color: #f77b6f;
+}
+
+.cb-card-navy {
+  background-color: #3b5c9d;
+}
+
+.cb-card-green {
+  background-color: #36b37e;
+}

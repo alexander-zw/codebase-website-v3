@@ -201,4 +201,11 @@ const PMs = [
   },
 ]
 
-export { Theme, BaseBehavior, Companies, LogoSize, Exec, PMs }
+const CardColors = [
+  "cb-card-blue",
+  "cb-card-navy",
+  "cb-card-green",
+  "cb-card-orange",
+]
+
+export { Theme, BaseBehavior, Companies, LogoSize, Exec, PMs, CardColors }

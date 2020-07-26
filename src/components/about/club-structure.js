@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import ScrollContainer from "react-indiana-drag-scroll"
+import { CardColors } from "../../constants"
 
 import "../../styles/club-structure.css"
 import "../../styles/layout.css"
@@ -25,12 +26,6 @@ const ClubStructure = () => {
   `)
 
   const { edges } = currentRoles.allAirtable
-  const colorClass = [
-    "cb-club-structure-blue",
-    "cb-club-structure-navy",
-    "cb-club-structure-green",
-    "cb-club-structure-orange",
-  ]
 
   const roleData = edges.map((edge, index) => {
     const { Role, Text } = edge.node.data
@@ -38,7 +33,7 @@ const ClubStructure = () => {
       <Col
         sm={12}
         className={`cb-club-structure-card ${
-          colorClass[index % colorClass.length]
+          CardColors[index % CardColors.length]
         }`}
       >
         <div className="cb-club-structure-card-body">
