@@ -4,11 +4,11 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-import { CardColors } from "../constants"
+import { CardColors, Background } from "../constants"
 import "../styles/current-projects.css"
 import "../styles/projects-cards.css"
 
-const CurrentProjects = () => {
+const CurrentProjects = ({ bg }) => {
   const currentProjects = useStaticQuery(graphql`
     query {
       allAirtable(
@@ -32,9 +32,7 @@ const CurrentProjects = () => {
     }
   `)
 
-  const { edges } = currentProjects.allAirtable
-
-  const clientCards = edges
+  const clientCards = currentProjects.allAirtable.edges
     .filter(edge => !!edge.node.data.Client)
     .map((edge, index) => {
       const { Logo, Type, Description, Hyperlink, Company } = edge.node.data
@@ -63,7 +61,9 @@ const CurrentProjects = () => {
       )
     })
 
-  const mentoredData = edges.filter(edge => !edge.node.data.Client)[0].node.data
+  const mentoredData = currentProjects.allAirtable.edges.filter(
+    edge => !edge.node.data.Client
+  )[0].node.data
 
   const mentoredCard = (
     <Col md={6} className="cb-projects-col">
@@ -88,7 +88,11 @@ const CurrentProjects = () => {
   )
 
   return (
-    <div className="cb-wrapper-gray">
+    <div
+      className={`${
+        bg === Background.GRAY ? "cb-wrapper-gray" : "cb-wrapper-white"
+      }`}
+    >
       <Container>
         <h1 className="cb-section-title">THIS SEMESTER'S PROJECTS</h1>
         <div className="cb-projects-section-header">

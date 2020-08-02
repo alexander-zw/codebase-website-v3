@@ -19,7 +19,7 @@ const HomeExperiences = () => {
     query {
       allAirtable(
         filter: { table: { eq: "Experiences" } }
-        sort: { fields: id }
+        sort: { fields: data___Order }
       ) {
         edges {
           node {

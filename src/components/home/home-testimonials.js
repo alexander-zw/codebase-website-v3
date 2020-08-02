@@ -9,7 +9,10 @@ import "../../styles/home-testimonials.css"
 const HomeTestimonials = () => {
   const currentTestimonials = useStaticQuery(graphql`
     query {
-      allAirtable(filter: { table: { eq: "Testimonials" } }) {
+      allAirtable(
+        filter: { table: { eq: "Testimonials" } }
+        sort: { fields: data___Order }
+      ) {
         edges {
           node {
             data {
@@ -23,9 +26,18 @@ const HomeTestimonials = () => {
     }
   `)
 
-  const { edges } = currentTestimonials.allAirtable
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    1024: {
+      items: 2,
+    },
+  }
 
-  const testimonialData = edges.map(edge => {
+  const handleOnDragStart = e => e.preventDefault()
+
+  const testimonialData = currentTestimonials.allAirtable.edges.map(edge => {
     const { Company, Role, Text } = edge.node.data
     return (
       <div
@@ -42,17 +54,6 @@ const HomeTestimonials = () => {
     )
   })
 
-  const responsive = {
-    0: {
-      items: 1,
-    },
-    1024: {
-      items: 2,
-    },
-  }
-
-  const handleOnDragStart = e => e.preventDefault()
-
   return (
     <div className="cb-wrapper-blue">
       <Container className="cb-home-testimonials-container">
@@ -61,7 +62,6 @@ const HomeTestimonials = () => {
             autoPlay
             autoPlayInterval="5000"
             responsive={responsive}
-            stopAutoPlayOnHover
             mouseTrackingEnabled
             buttonsDisabled
           >

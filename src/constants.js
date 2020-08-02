@@ -3,6 +3,11 @@ const Theme = Object.freeze({
   LIGHT: 1,
 })
 
+const Background = Object.freeze({
+  WHITE: 0,
+  GRAY: 1,
+})
+
 const BaseBehavior = Object.freeze({
   OWNERSHIP: 0,
   COMMUNICATE: 1,
@@ -208,4 +213,13 @@ const CardColors = [
   "cb-card-orange",
 ]
 
-export { Theme, BaseBehavior, Companies, LogoSize, Exec, PMs, CardColors }
+export {
+  Theme,
+  BaseBehavior,
+  Companies,
+  LogoSize,
+  Exec,
+  PMs,
+  CardColors,
+  Background,
+}

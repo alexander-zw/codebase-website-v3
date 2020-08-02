@@ -9,9 +9,12 @@ import { CardColors } from "../../constants"
 import "../../styles/club-structure.css"
 
 const ClubStructure = () => {
-  const currentRoles = useStaticQuery(graphql`
+  const roles = useStaticQuery(graphql`
     query {
-      allAirtable(filter: { table: { eq: "Roles" } }) {
+      allAirtable(
+        filter: { table: { eq: "Roles" } }
+        sort: { fields: data___Order }
+      ) {
         edges {
           node {
             data {
@@ -24,9 +27,7 @@ const ClubStructure = () => {
     }
   `)
 
-  const { edges } = currentRoles.allAirtable
-
-  const roleData = edges.map((edge, index) => {
+  const roleData = roles.allAirtable.edges.map((edge, index) => {
     const { Role, Text } = edge.node.data
     return (
       <Col

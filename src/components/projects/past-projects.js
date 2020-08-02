@@ -30,9 +30,7 @@ const PastProjects = () => {
     }
   `)
 
-  const { edges } = pastProjects.allAirtable
-
-  const projectCards = edges.map((edge, index) => {
+  const projectCards = pastProjects.allAirtable.edges.map((edge, index) => {
     const { Logo, Type, Description, Hyperlink, Company } = edge.node.data
     return (
       <Col lg={3} md={6} sm={6} xs={12} className="cb-projects-col">

@@ -2,18 +2,20 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Theme } from "../constants"
+import { Theme, Background } from "../constants"
 
 import CurrentProjects from "../components/current-projects"
 import ProjectsHeader from "../components/projects/projects-header"
 import PastProjects from "../components/projects/past-projects"
+import DevelopmentTimeline from "../components/projects/development-timeline"
 
 const ProjectsPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
       <SEO title="Projects" />
       <ProjectsHeader />
-      <CurrentProjects />
+      <CurrentProjects bg={Background.WHITE} />
+      <DevelopmentTimeline />
       <PastProjects />
     </Layout>
   )
