@@ -87,7 +87,6 @@ footer {
 
 .cb-card:hover {
   transform: scale(1.03);
-  background-color: #000000;
 }
 
 .cb-card-body {

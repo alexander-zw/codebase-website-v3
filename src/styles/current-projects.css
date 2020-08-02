@@ -4,7 +4,8 @@
 }
 
 .cb-current-projects-col {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .cb-current-projects-client-card,

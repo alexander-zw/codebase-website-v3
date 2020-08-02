@@ -4,7 +4,8 @@
 
 .cb-club-structure-row-container {
   width: 100%;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .cb-club-structure-card {
