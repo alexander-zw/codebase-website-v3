@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import { graphql, useStaticQuery } from "gatsby"
+import HorizontalScroll from "./horizontal-scroll"
 
 import "../../styles/home-experiences.css"
 
@@ -11,6 +12,9 @@ const HomeExperiences = () => {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [])
+
+  const cutoff = 768
+
   const experiences = useStaticQuery(graphql`
     query {
       allAirtable(
@@ -55,30 +59,43 @@ const HomeExperiences = () => {
     )
   })
 
+  const renderedRowContent = (
+    <Row className="cb-home-experiences-row">
+      <Col md={5} xs={12} className="cb-home-experiences-col">
+        <div className="cb-home-experiences-intro">
+          <div className="cb-home-experiences-intro-text">
+            <p>
+              <span role="img" aria-label="magnifying glass">
+                🔎
+              </span>
+            </p>
+            <p>A glimpse into our community</p>
+            {width < cutoff && (
+              <p className="cb-home-experiences-swipe">
+                Swipe or scroll to explore →
+              </p>
+            )}
+          </div>
+        </div>
+      </Col>
+      {width >= cutoff ? (
+        <Col xs={13} className="cb-home-experiences-wrapper-col">
+          {renderedExperience}
+        </Col>
+      ) : (
+        renderedExperience
+      )}
+    </Row>
+  )
+
   return (
     <div>
-      <Container className="cb-home-experiences-container">
-        <Row className="cb-home-experiences-row">
-          <Col md={5} xs={12} className="cb-home-experiences-col">
-            <div className=" cb-home-experiences-intro">
-              <div className="cb-home-experiences-intro-text">
-                <p>
-                  <span role="img" aria-label="magnifying glass">
-                    🔎
-                  </span>
-                </p>
-                <p>A glimpse into our community</p>
-              </div>
-            </div>
-          </Col>
-          {width > 480 ? (
-            <Col xs={13} className="cb-home-experiences-wrapper-col">
-              {renderedExperience}
-            </Col>
-          ) : (
-            renderedExperience
-          )}
-        </Row>
+      <Container fluid className="cb-home-experiences-container">
+        {width >= cutoff ? (
+          <HorizontalScroll>{renderedRowContent}</HorizontalScroll>
+        ) : (
+          renderedRowContent
+        )}
       </Container>
     </div>
   )
