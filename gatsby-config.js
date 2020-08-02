@@ -51,6 +51,11 @@ module.exports = {
             tableName: "Roles",
             tableView: "Content",
           },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Experiences",
+            tableView: "Content",
+          },
         ],
       },
     },
