@@ -1,0 +1,30 @@
+.cb-past-projects-card {
+  background-color: #f6f7f8;
+}
+
+.cb-past-projects-text {
+  color: #80868b;
+}
+
+.cb-past-projects-type {
+  color: #80868b;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cb-past-projects-card {
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cb-past-projects-card {
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cb-past-projects-card {
+    height: 360px;
+  }
+}

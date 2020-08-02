@@ -6,11 +6,14 @@ import Col from "react-bootstrap/Col"
 
 import { CardColors } from "../constants"
 import "../styles/current-projects.css"
+import "../styles/projects-cards.css"
 
 const CurrentProjects = () => {
   const currentProjects = useStaticQuery(graphql`
     query {
-      allAirtable(filter: { table: { eq: "Projects" } }) {
+      allAirtable(
+        filter: { table: { eq: "Projects" }, data: { Current: { eq: true } } }
+      ) {
         edges {
           node {
             data {
@@ -36,9 +39,9 @@ const CurrentProjects = () => {
     .map((edge, index) => {
       const { Logo, Type, Description, Hyperlink, Company } = edge.node.data
       return (
-        <Col lg={3} md={6} sm={6} xs={12} className="cb-current-projects-col">
+        <Col lg={3} md={6} sm={6} xs={12} className="cb-projects-col">
           <div
-            className={`cb-card cb-current-projects-client-card ${
+            className={`cb-card cb-projects-card cb-current-projects-client-card ${
               CardColors[index % CardColors.length]
             }`}
           >
@@ -47,7 +50,7 @@ const CurrentProjects = () => {
                 <img
                   src={Logo[0].url}
                   alt={Company}
-                  className="cb-current-projects-logo"
+                  className="cb-projects-logo"
                 ></img>
               </a>
               <div className="cb-current-projects-type">
@@ -63,16 +66,16 @@ const CurrentProjects = () => {
   const mentoredData = edges.filter(edge => !edge.node.data.Client)[0].node.data
 
   const mentoredCard = (
-    <Col md={6} className="cb-current-projects-col">
+    <Col md={6} className="cb-projects-col">
       <div
-        className={`cb-card cb-current-projects-mentored-card ${CardColors[0]}`}
+        className={`cb-card cb-projects-card cb-current-projects-mentored-card ${CardColors[0]}`}
       >
         <div className="cb-card-body">
           <a href={mentoredData.Hyperlink} target="_source">
             <img
               src={mentoredData.Logo[0].url}
               alt={mentoredData.Company}
-              className="cb-current-projects-logo"
+              className="cb-projects-logo"
             ></img>
           </a>
           <div className="cb-current-projects-type">
@@ -88,7 +91,7 @@ const CurrentProjects = () => {
     <div className="cb-wrapper-gray">
       <Container>
         <h1 className="cb-section-title">THIS SEMESTER'S PROJECTS</h1>
-        <div className="cb-current-projects-section-header">
+        <div className="cb-projects-section-header">
           <h2 className="cb-section-heading">Client Projects</h2>
           <p className="cb-section-text">
             Our client teams work with industry partners to build products
@@ -100,11 +103,11 @@ const CurrentProjects = () => {
           Read about the client experience →
         </Link>
 
-        <Row className="cb-current-projects-card-row"> {clientCards} </Row>
+        <Row className="cb-projects-card-row"> {clientCards} </Row>
 
         <Row>
           <Col md={6}>
-            <div className="cb-current-projects-section-header">
+            <div className="cb-projects-section-header">
               <h2 className="cb-section-heading">Mentored Project</h2>
               <p className="cb-section-text">
                 Our mentored team focuses on learning the essentials of software
