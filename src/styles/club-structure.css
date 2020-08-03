@@ -25,14 +25,12 @@
 
 @media only screen and (max-width: 479px) {
   .cb-club-structure-card {
-    min-height: 220px;
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 480px) {
   .cb-club-structure-card {
-    min-height: 250px;
     max-width: 250px !important;
     min-width: 250px !important;
     margin-right: 20px;

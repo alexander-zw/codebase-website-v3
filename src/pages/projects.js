@@ -8,12 +8,14 @@ import CurrentProjects from "../components/current-projects"
 import ProjectsHeader from "../components/projects/projects-header"
 import PastProjects from "../components/projects/past-projects"
 import DevelopmentTimeline from "../components/projects/development-timeline"
+import TeamDescriptions from "../components/projects/team-descriptions"
 
 const ProjectsPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
       <SEO title="Projects" />
       <ProjectsHeader />
+      <TeamDescriptions />
       <CurrentProjects bg={Background.WHITE} />
       <DevelopmentTimeline />
       <PastProjects />

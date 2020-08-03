@@ -64,7 +64,9 @@ const PastProjects = () => {
           </p>
         </div>
 
-        <Row className="cb-projects-card-row"> {projectCards} </Row>
+        <Row className="cb-projects-card-row cb-past-projects-card-row">
+          {projectCards}{" "}
+        </Row>
       </Container>
     </div>
   )

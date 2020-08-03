@@ -11,20 +11,12 @@
   margin-bottom: 10px;
 }
 
+.cb-current-projects-client-card {
+  height: 100%;
+}
+
 @media only screen and (max-width: 767px) {
   .cb-current-projects-mentored-card {
     margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-  .cb-current-projects-client-card {
-    height: 225px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .cb-current-projects-client-card {
-    height: 250px;
   }
 }

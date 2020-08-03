@@ -1,0 +1,25 @@
+.cb-team-descriptions-icon {
+  margin-bottom: 40px;
+}
+
+.cb-team-descriptions-card-title {
+  font-family: "Inter-Medium";
+  font-size: 17px;
+  color: #2f2f30;
+  margin-bottom: 20px;
+}
+
+.cb-team-descriptions-card-text {
+  font-family: "Inter-Medium";
+  font-size: 14px;
+  color: #80868b;
+}
+
+.cb-team-descriptions-card-list {
+  margin: 0;
+  padding: 0;
+}
+
+.cb-team-descriptions-heading {
+  margin-bottom: 40px;
+}
