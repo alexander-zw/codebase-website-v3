@@ -22,7 +22,7 @@ const GeneralContact = () => {
             <div className="cb-dual-cards-card">
               <div className="cb-dual-card-content">
                 <img
-                  src={studentIcon}
+                  src={companyIcon}
                   height="40"
                   alt=""
                   className="cb-general-contact-icon"
@@ -48,7 +48,7 @@ const GeneralContact = () => {
             <div className="cb-dual-cards-card">
               <div className="cb-dual-card-content">
                 <img
-                  src={companyIcon}
+                  src={studentIcon}
                   height="40"
                   alt=""
                   className="cb-general-contact-icon"
