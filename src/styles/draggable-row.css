@@ -1,0 +1,31 @@
+.cb-draggable-row-card {
+  cursor: grab;
+}
+
+.cb-draggable-row-container {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 479px) {
+  .cb-draggable-row-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .cb-draggable-row-card {
+    max-width: 250px !important;
+    min-width: 250px !important;
+    margin-right: 20px;
+  }
+
+  .cb-draggable-row-hidden {
+    min-width: 25px;
+  }
+
+  .cb-draggable-row-row {
+    flex-wrap: nowrap;
+  }
+}

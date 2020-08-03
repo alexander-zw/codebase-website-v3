@@ -4,11 +4,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Theme } from "../constants"
 
+import ApplyHeader from "../components/apply/apply-header"
+import ApplicationProcess from "../components/apply/application-process"
+
 const ApplyPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
       <SEO title="Apply" />
-      <h1>Apply</h1>
+      <ApplyHeader />
+      <ApplicationProcess />
     </Layout>
   )
 }
