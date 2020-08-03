@@ -2,16 +2,6 @@
   max-width: 650px;
 }
 
-.cb-club-structure-row-container {
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.cb-club-structure-card {
-  cursor: grab;
-}
-
 .cb-club-structure-card-title {
   font-family: "Inter-SemiBold";
   font-size: 14px;
@@ -21,26 +11,4 @@
 
 .cb-club-structure-card-text {
   color: #ffffff;
-}
-
-@media only screen and (max-width: 479px) {
-  .cb-club-structure-card {
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .cb-club-structure-card {
-    max-width: 250px !important;
-    min-width: 250px !important;
-    margin-right: 20px;
-  }
-
-  .cb-club-structure-hidden {
-    min-width: 25px;
-  }
-
-  .cb-club-structure-row {
-    flex-wrap: nowrap;
-  }
 }

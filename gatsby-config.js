@@ -66,6 +66,26 @@ module.exports = {
             tableName: "Timeline",
             tableView: "Content",
           },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Recruitment Control",
+            tableView: "Content",
+          },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Recruitment Events",
+            tableView: "Content",
+          },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Student FAQ",
+            tableView: "Content",
+          },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Client FAQ",
+            tableView: "Content",
+          },
         ],
       },
     },

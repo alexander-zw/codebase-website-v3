@@ -6,6 +6,7 @@ import ScrollContainer from "react-indiana-drag-scroll"
 import ReactAliceCarousel from "react-alice-carousel"
 
 import "../../styles/development-timeline.css"
+import "../../styles/draggable-row.css"
 
 const DevelopmentTimeline = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -78,11 +79,14 @@ const DevelopmentTimeline = () => {
         </div>
       </Container>
       {width >= cutoff ? (
-        <ScrollContainer className="cb-development-timeline-row-container">
+        <ScrollContainer className="cb-draggable-row-container">
           <Container>
-            <Row noGutters className="cb-development-timeline-row">
+            <Row
+              noGutters
+              className="cb-development-timeline-row cb-draggable-row-row"
+            >
               {timelineHorizontal}
-              <div className="cb-development-timeline-hidden"></div>
+              <div className="cb-draggable-row-hidden"></div>
             </Row>
           </Container>
         </ScrollContainer>

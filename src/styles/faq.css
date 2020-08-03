@@ -1,0 +1,13 @@
+.cb-faq-block {
+  margin-top: 40px;
+  font-family: "Inter-Medium";
+  font-size: 14px;
+}
+
+.cb-faq-question {
+  color: #336ee2;
+}
+
+.cb-faq-answer {
+  color: #80868b;
+}

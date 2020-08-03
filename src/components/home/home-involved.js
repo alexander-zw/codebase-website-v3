@@ -41,7 +41,7 @@ const HomeInvolved = () => {
               projects to work with. If you have a project for us, please reach
               out!
             </p>
-            <Link className="cb-link-blue" to="/contact">
+            <Link className="cb-link-blue" to="clients">
               Contact Us →
             </Link>
           </Col>
@@ -51,7 +51,7 @@ const HomeInvolved = () => {
               We are looking for students who have a hunger for learning and a
               passion for tech. Interested? Join our team!
             </p>
-            <Link className="cb-link-blue" to="/contact">
+            <Link className="cb-link-blue" to="students">
               Contact Us →
             </Link>
           </Col>

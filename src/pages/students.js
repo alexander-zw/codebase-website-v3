@@ -4,15 +4,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Theme } from "../constants"
 
-import GeneralContact from "../components/contact/general-contact"
+import StudentsContact from "../components/contact/students-contact"
 
-const ContactPage = ({ location }) => {
+const StudentsPage = ({ location }) => {
   return (
     <Layout theme={Theme.LIGHT}>
-      <SEO title="Contact" />
-      <GeneralContact />
+      <SEO title="Students" />
+      <StudentsContact />
     </Layout>
   )
 }
 
-export default ContactPage
+export default StudentsPage

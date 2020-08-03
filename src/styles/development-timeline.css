@@ -3,10 +3,6 @@
   margin-bottom: 40px;
 }
 
-.cb-development-timeline-row-container {
-  width: 100%;
-}
-
 .cb-club-structure-card-title {
   font-family: "Inter-SemiBold";
   font-size: 14px;
@@ -16,10 +12,6 @@
 
 .cb-club-structure-card-text {
   color: #ffffff;
-}
-
-.cb-development-timeline-hidden {
-  min-width: 25px;
 }
 
 .cb-development-timeline-headline {
@@ -58,7 +50,6 @@
   }
 
   .cb-development-timeline-row {
-    flex-wrap: nowrap;
     cursor: grab;
   }
 

@@ -7,6 +7,7 @@ import ScrollContainer from "react-indiana-drag-scroll"
 
 import { CardColors } from "../../constants"
 import "../../styles/club-structure.css"
+import "../../styles/draggable-row.css"
 
 const ClubStructure = () => {
   const roles = useStaticQuery(graphql`
@@ -32,7 +33,7 @@ const ClubStructure = () => {
     return (
       <Col
         sm={12}
-        className={`cb-card cb-club-structure-card ${
+        className={`cb-card cb-draggable-row-card ${
           CardColors[index % CardColors.length]
         }`}
       >
@@ -63,11 +64,11 @@ const ClubStructure = () => {
           </a>
         </div>
       </Container>
-      <ScrollContainer className="cb-club-structure-row-container">
+      <ScrollContainer className="cb-draggable-row-container">
         <Container>
-          <Row noGutters className="cb-club-structure-row">
+          <Row noGutters className="cb-draggable-row-row">
             {roleData}
-            <div className="cb-club-structure-hidden"></div>
+            <div className="cb-draggable-row-hidden"></div>
           </Row>
         </Container>
       </ScrollContainer>
