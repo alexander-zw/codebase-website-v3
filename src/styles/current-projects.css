@@ -1,25 +1,5 @@
-.cb-current-projects-section-header {
-  max-width: 650px;
-  margin-bottom: 20px;
-}
-
-.cb-current-projects-col {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.cb-current-projects-client-card,
-.cb-current-projects-mentored-card {
-  cursor: default;
-}
-
 .cb-current-projects-mentored-card {
   min-height: 200px;
-}
-
-.cb-current-projects-logo {
-  height: 30px;
-  margin-bottom: 16px;
 }
 
 .cb-current-projects-text {
@@ -31,25 +11,12 @@
   margin-bottom: 10px;
 }
 
-.cb-current-projects-card-row {
-  margin-top: 20px;
-  margin-bottom: 40px;
+.cb-current-projects-client-card {
+  height: 100%;
 }
 
 @media only screen and (max-width: 767px) {
   .cb-current-projects-mentored-card {
     margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-  .cb-current-projects-client-card {
-    height: 225px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .cb-current-projects-client-card {
-    height: 250px;
   }
 }

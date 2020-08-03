@@ -28,7 +28,7 @@ const ProjectsHeader = () => {
         </Container>
       </div>
       <Parallax bgImage={img} strength={200}>
-        <div style={{ height: Math.max(500, (width * 1300) / 3072) }} />
+        <div style={{ height: Math.max(500, width / 3) }} />
       </Parallax>
     </div>
   )

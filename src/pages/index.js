@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Theme } from "../constants"
+import { Theme, Background } from "../constants"
 
 import HomeHeader from "../components/home/home-header"
 import HomeMission from "../components/home/home-mission"
@@ -18,7 +18,7 @@ const IndexPage = ({ location }) => {
       <HomeHeader />
       <HomeMission />
       <HomeExperiences />
-      <CurrentProjects />
+      <CurrentProjects bg={Background.GRAY} />
       <HomeInvolved />
       <HomeTestimonials />
     </Layout>

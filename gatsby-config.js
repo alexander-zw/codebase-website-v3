@@ -43,6 +43,11 @@ module.exports = {
           },
           {
             baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Projects",
+            tableView: "Showcase",
+          },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
             tableName: "Testimonials",
             tableView: "Content",
           },
@@ -54,6 +59,11 @@ module.exports = {
           {
             baseId: "appMWiDJv5hAFHvHA",
             tableName: "Experiences",
+            tableView: "Content",
+          },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Timeline",
             tableView: "Content",
           },
         ],

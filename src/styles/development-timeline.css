@@ -1,0 +1,68 @@
+.cb-development-timeline-header {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.cb-development-timeline-row-container {
+  width: 100%;
+}
+
+.cb-club-structure-card-title {
+  font-family: "Inter-SemiBold";
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.cb-club-structure-card-text {
+  color: #ffffff;
+}
+
+.cb-development-timeline-hidden {
+  min-width: 25px;
+}
+
+.cb-development-timeline-headline {
+  font-family: "Inter-SemiBold";
+  font-size: 14px;
+  color: #336ee2;
+}
+
+.cb-development-timeline-blurb {
+  font-family: "Inter-Medium";
+  font-size: 14px;
+  color: #80868b;
+}
+
+.cb-development-timeline-img {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 479px) {
+  .cb-development-timeline-img {
+    width: 100%;
+  }
+
+  .cb-development-timeline-col {
+    outline: none;
+    cursor: grab;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .cb-development-timeline-col {
+    height: 100%;
+    margin-right: 60px;
+  }
+
+  .cb-development-timeline-row {
+    flex-wrap: nowrap;
+    cursor: grab;
+  }
+
+  .cb-development-timeline-img {
+    width: 300px;
+  }
+}
