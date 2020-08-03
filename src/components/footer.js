@@ -123,17 +123,17 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/projects">
+                  <Link className="cb-footer-link" to="/apply">
                     Process
                   </Link>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/contact">
+                  <Link className="cb-footer-link" to="/apply">
                     FAQs
                   </Link>
                 </div>
                 <div className="mt-2 mb-4">
-                  <Link className="cb-footer-link" to="/contact">
+                  <Link className="cb-footer-link" to="/students">
                     Contact Us
                   </Link>
                 </div>
@@ -146,12 +146,12 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/contact">
+                  <Link className="cb-footer-link" to="/clients">
                     FAQs
                   </Link>
                 </div>
                 <div className="mt-2 mb-4">
-                  <Link className="cb-footer-link" to="/contact">
+                  <Link className="cb-footer-link" to="/clients">
                     Contact Us
                   </Link>
                 </div>
