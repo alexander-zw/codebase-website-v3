@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -97,6 +98,11 @@ const TeamDescriptions = () => {
               </div>
             </div>
           </Col>
+        </Row>
+        <Row noGutters className="justify-content-end">
+          <Link className="cb-link-blue" to="apply">
+            Learn about which project is right for you →
+          </Link>
         </Row>
       </Container>
     </div>
