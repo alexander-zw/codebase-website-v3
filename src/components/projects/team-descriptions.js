@@ -32,7 +32,7 @@ const TeamDescriptions = () => {
                 </h2>
                 <p className="cb-team-descriptions-card-text">
                   Our client teams allow those with more experience to work on
-                  industry facing projects and build on current software
+                  industry facing projects and build on their software
                   development foundations.
                 </p>
                 <p className="cb-team-descriptions-card-text">
