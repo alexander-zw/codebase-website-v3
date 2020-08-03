@@ -76,6 +76,16 @@ module.exports = {
             tableName: "Recruitment Events",
             tableView: "Content",
           },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Student FAQ",
+            tableView: "Content",
+          },
+          {
+            baseId: "appMWiDJv5hAFHvHA",
+            tableName: "Client FAQ",
+            tableView: "Content",
+          },
         ],
       },
     },
