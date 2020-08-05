@@ -9,8 +9,9 @@ import "../../styles/development-timeline.css"
 import "../../styles/draggable-row.css"
 
 const DevelopmentTimeline = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(0)
   useEffect(() => {
+    setWidth(window.innerWidth)
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [])
 

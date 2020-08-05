@@ -7,9 +7,9 @@ import img from "../../images/projects-header-img.jpg"
 import "../../styles/projects-header.css"
 
 const ProjectsHeader = () => {
-  const [width, setWidth] = useState(window.innerWidth)
-
+  const [width, setWidth] = useState(0)
   useEffect(() => {
+    setWidth(window.innerWidth)
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [])
 

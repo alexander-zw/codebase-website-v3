@@ -8,8 +8,9 @@ import HorizontalScroll from "./horizontal-scroll"
 import "../../styles/home-experiences.css"
 
 const HomeExperiences = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(0)
   useEffect(() => {
+    setWidth(window.innerWidth)
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [])
 
