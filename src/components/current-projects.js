@@ -104,7 +104,7 @@ const CurrentProjects = ({ bg }) => {
         </div>
 
         <Link className="cb-link-blue" to="projects">
-          Read about the client experience →
+          Learn more about our client projects →
         </Link>
 
         <Row className="cb-projects-card-row"> {clientCards} </Row>

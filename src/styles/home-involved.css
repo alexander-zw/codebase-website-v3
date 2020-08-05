@@ -60,6 +60,10 @@
   flex-wrap: wrap;
 }
 
+.cb-home-involved-icon {
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 991px) {
   .cb-home-involved-button-row {
     margin-bottom: 40px;

@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
+import studentIcon from "../../images/icons/student-icon.png"
+import companyIcon from "../../images/icons/company-icon.png"
 import "../../styles/home-involved.css"
 
 const HomeInvolved = () => {
@@ -35,6 +37,12 @@ const HomeInvolved = () => {
             </div>
           </Col>
           <Col lg={3} md={6} sm={6}>
+            <img
+              src={companyIcon}
+              height="30"
+              alt=""
+              className="cb-home-involved-icon"
+            />
             <h1 className="cb-home-involved-heading">For Companies and NPOs</h1>
             <p className="cb-section-text">
               We are looking for companies and non-profits with exciting
@@ -46,6 +54,12 @@ const HomeInvolved = () => {
             </Link>
           </Col>
           <Col lg={3} md={6} sm={6} className="cb-home-involved-col">
+            <img
+              src={studentIcon}
+              height="30"
+              alt=""
+              className="cb-home-involved-icon"
+            />
             <h1 className="cb-home-involved-heading">For Students</h1>
             <p className="cb-section-text">
               We are looking for students who have a hunger for learning and a
