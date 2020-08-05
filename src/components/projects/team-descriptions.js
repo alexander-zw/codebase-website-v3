@@ -32,7 +32,7 @@ const TeamDescriptions = () => {
                 </h2>
                 <p className="cb-team-descriptions-card-text">
                   Our client teams allow those with more experience to work on
-                  industry facing projects and build on their software
+                  industry-facing projects and build on their software
                   development foundations.
                 </p>
                 <p className="cb-team-descriptions-card-text">
@@ -74,7 +74,7 @@ const TeamDescriptions = () => {
                 <p className="cb-team-descriptions-card-text">
                   Our mentored team provides the opportunity for those with no
                   prior software engineering experience to learn the skills
-                  needed to take on industry facing projects.
+                  needed to take on industry-facing projects.
                 </p>
                 <p className="cb-team-descriptions-card-text">
                   What you'll do:
@@ -86,7 +86,7 @@ const TeamDescriptions = () => {
                       website from scratch.
                     </li>
                     <li>
-                      Eesign, develop, and deliver a full-stack web application
+                      Design, develop, and deliver a full-stack web application
                       for a nonprofit client.
                     </li>
                     <li>

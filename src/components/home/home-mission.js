@@ -60,7 +60,7 @@ const HomeMission = () => {
               >
                 <CountUp
                   start={0}
-                  end={didViewCountUp ? 12 : 0}
+                  end={didViewCountUp ? 13 : 0}
                   duration={2.75}
                   useEasing={true}
                 />
@@ -79,7 +79,7 @@ const HomeMission = () => {
               >
                 <CountUp
                   start={0}
-                  end={didViewCountUp ? 25 : 0}
+                  end={didViewCountUp ? 34 : 0}
                   duration={2.75}
                   useEasing={true}
                 />

@@ -23,7 +23,7 @@ const ProjectsHeader = () => {
             we have opportunities for you!
           </h1>
           <Link className="cb-projects-header-button" to="/apply">
-            Apply →
+            Join our team →
           </Link>
         </Container>
       </div>

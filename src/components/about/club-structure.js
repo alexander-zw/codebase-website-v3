@@ -55,12 +55,12 @@ const ClubStructure = () => {
             positions. Our structure is relatively flat so that everybody has an
             active role in shaping our club.
           </p>
-          <a
+          {/* <a
             className="cb-link-blue"
             href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
           >
             Read about our members’ experiences →
-          </a>
+          </a> */}
         </div>
       </Container>
       <ScrollContainer className="cb-draggable-row-container">

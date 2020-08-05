@@ -89,15 +89,13 @@ const HomeExperiences = () => {
   )
 
   return (
-    <div>
-      <Container fluid className="cb-home-experiences-container">
-        {width >= cutoff ? (
-          <HorizontalScroll>{renderedRowContent}</HorizontalScroll>
-        ) : (
-          renderedRowContent
-        )}
-      </Container>
-    </div>
+    <Container fluid className="cb-home-experiences-container">
+      {width >= cutoff ? (
+        <HorizontalScroll>{renderedRowContent}</HorizontalScroll>
+      ) : (
+        renderedRowContent
+      )}
+    </Container>
   )
 }
 
