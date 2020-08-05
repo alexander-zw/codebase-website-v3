@@ -36,7 +36,7 @@ const PastProjects = () => {
       <Col lg={3} md={6} sm={6} xs={12} className="cb-projects-col">
         <div className="cb-card cb-projects-card cb-past-projects-card">
           <div className="cb-card-body">
-            <a href={Hyperlink} target="_source">
+            <a href={Hyperlink}>
               <img
                 src={Logo[0].url}
                 alt={Company}

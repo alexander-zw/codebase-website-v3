@@ -74,7 +74,6 @@ const ApplicationRequirements = () => {
                   <a
                     className="cb-application-requirements-button"
                     href={Client_Application}
-                    target="_source"
                   >
                     Apply →
                   </a>
@@ -120,7 +119,6 @@ const ApplicationRequirements = () => {
                   <a
                     className="cb-application-requirements-button"
                     href={Mentored_Application}
-                    target="_source"
                   >
                     Apply →
                   </a>

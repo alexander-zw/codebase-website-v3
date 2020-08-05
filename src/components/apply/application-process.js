@@ -58,11 +58,7 @@ const ApplicationProcess = () => {
           <h2 className="cb-application-process-card-title">{Name}</h2>
           <p className="cb-application-process-card-date">{Date}</p>
           <p className="cb-application-process-card-text">{Description}</p>
-          <a
-            className="cb-application-process-card-link"
-            href={Link}
-            target="_source"
-          >
+          <a className="cb-application-process-card-link" href={Link}>
             Zoom Link
           </a>
         </div>
@@ -71,17 +67,13 @@ const ApplicationProcess = () => {
   })
 
   return (
-    <div className="cb-wrapper-gray">
+    <div className="cb-wrapper-gray" id="application-process">
       <Container>
         <div className="cb-application-process-header">
           <h1 className="cb-section-heading">Application Process</h1>
           <p className="cb-section-text">
             Below is the application process for {Current_Semester}. Click{" "}
-            <a
-              className="cb-application-process-link"
-              href={GCal_Link}
-              target="_source"
-            >
+            <a className="cb-application-process-link" href={GCal_Link}>
               here
             </a>{" "}
             to add all of the events to your Google calendar!

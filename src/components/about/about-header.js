@@ -15,7 +15,6 @@ const AboutHeader = () => {
         <a
           className="cb-about-header-button"
           href="https://medium.com/berkeley-codebase"
-          target="_source"
         >
           Read more on our blog →
         </a>

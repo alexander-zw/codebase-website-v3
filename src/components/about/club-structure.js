@@ -58,7 +58,6 @@ const ClubStructure = () => {
           <a
             className="cb-link-blue"
             href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
-            target="_source"
           >
             Read about our members’ experiences →
           </a>

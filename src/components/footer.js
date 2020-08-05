@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Img from "gatsby-image"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
@@ -41,7 +42,6 @@ const Footer = () => {
               <a
                 className="cb-footer-social-link"
                 href="https://www.facebook.com/berkeleycodebase/"
-                target="_source"
               >
                 <img
                   src={fbLogo}
@@ -57,7 +57,6 @@ const Footer = () => {
               <a
                 className="cb-footer-social-link"
                 href="https://www.instagram.com/berkeleycodebase/"
-                target="_source"
               >
                 <img
                   src={instaLogo}
@@ -73,7 +72,6 @@ const Footer = () => {
               <a
                 className="cb-footer-social-link"
                 href="https://medium.com/berkeley-codebase"
-                target="_source"
               >
                 <img
                   src={medLogo}
@@ -96,9 +94,13 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/about">
+                  <AnchorLink
+                    className="cb-footer-link"
+                    to="/about#team"
+                    stripHash
+                  >
                     Team
-                  </Link>
+                  </AnchorLink>
                 </div>
                 <div className="mt-2 mb-2">
                   <Link className="cb-footer-link" to="/projects">
@@ -109,7 +111,6 @@ const Footer = () => {
                   <a
                     className="cb-footer-link"
                     href="https://medium.com/berkeley-codebase"
-                    target="_source"
                   >
                     Blog
                   </a>
@@ -123,14 +124,22 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/apply">
+                  <AnchorLink
+                    className="cb-footer-link"
+                    to="/apply#application-process"
+                    stripHash
+                  >
                     Process
-                  </Link>
+                  </AnchorLink>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/apply">
+                  <AnchorLink
+                    className="cb-footer-link"
+                    to="/apply#student-faq"
+                    stripHash
+                  >
                     FAQs
-                  </Link>
+                  </AnchorLink>
                 </div>
                 <div className="mt-2 mb-4">
                   <Link className="cb-footer-link" to="/students">
@@ -146,9 +155,13 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-2 mb-2">
-                  <Link className="cb-footer-link" to="/clients">
+                  <AnchorLink
+                    className="cb-footer-link"
+                    to="/clients#client-faq"
+                    stripHash
+                  >
                     FAQs
-                  </Link>
+                  </AnchorLink>
                 </div>
                 <div className="mt-2 mb-4">
                   <Link className="cb-footer-link" to="/clients">

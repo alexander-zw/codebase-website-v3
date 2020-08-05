@@ -150,7 +150,7 @@ class BaseBehaviors extends React.Component {
               <div className="cb-bb-text">Genuinely Give Back</div>
             </Col>
           </Row>
-          <Row className="cb-bb-image-row">
+          <Row className="cb-bb-image-row" id="team">
             <Col md={12}>
               <BaseBehaviorsClub />
             </Col>

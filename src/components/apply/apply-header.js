@@ -46,11 +46,7 @@ const ApplyHeader = () => {
           </p>
         )}
 
-        <a
-          className="cb-apply-header-button"
-          href={Interest_Form_URL}
-          target="_source"
-        >
+        <a className="cb-apply-header-button" href={Interest_Form_URL}>
           Fill out interest form →
         </a>
       </Container>

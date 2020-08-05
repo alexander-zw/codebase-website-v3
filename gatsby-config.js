@@ -9,6 +9,7 @@ module.exports = {
     author: `@codebase-berkeley`,
   },
   plugins: [
+    `gatsby-plugin-anchor-links`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

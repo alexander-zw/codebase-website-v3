@@ -34,7 +34,7 @@ const StudentFAQ = () => {
   })
 
   return (
-    <div className="cb-wrapper-white">
+    <div className="cb-wrapper-white" id="student-faq">
       <Container>
         <h2 className="cb-section-heading">Frequently Asked Questions</h2>
         {renderedFAQ}

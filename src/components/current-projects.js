@@ -44,7 +44,7 @@ const CurrentProjects = ({ bg }) => {
             }`}
           >
             <div className="cb-card-body">
-              <a href={Hyperlink} target="_source">
+              <a href={Hyperlink}>
                 <img
                   src={Logo[0].url}
                   alt={Company}
@@ -71,7 +71,7 @@ const CurrentProjects = ({ bg }) => {
         className={`cb-card cb-projects-card cb-current-projects-mentored-card ${CardColors[0]}`}
       >
         <div className="cb-card-body">
-          <a href={mentoredData.Hyperlink} target="_source">
+          <a href={mentoredData.Hyperlink}>
             <img
               src={mentoredData.Logo[0].url}
               alt={mentoredData.Company}
@@ -123,7 +123,6 @@ const CurrentProjects = ({ bg }) => {
             <a
               className="cb-link-blue"
               href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
-              target="_source"
             >
               Read about the mentored experience →
             </a>

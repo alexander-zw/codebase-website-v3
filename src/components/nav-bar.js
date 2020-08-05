@@ -84,7 +84,6 @@ const NavBar = ({ theme }) => {
                     theme
                   )}`}
                   href="https://medium.com/berkeley-codebase"
-                  target="_source"
                 >
                   Blog
                 </a>
