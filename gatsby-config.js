@@ -7,6 +7,7 @@ module.exports = {
     title: `Codebase`,
     description: `Codebase is a UC Berkeley student organization that builds software projects for high growth tech companies.`,
     author: `@codebase-berkeley`,
+    url: `https://codebase.berkeley.edu`,
   },
   plugins: [
     `gatsby-plugin-anchor-links`,

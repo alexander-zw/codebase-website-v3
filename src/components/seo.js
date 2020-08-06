@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 
 const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
+  const { site, ogImageDefault } = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,6 +19,14 @@ const SEO = ({ description, lang, meta, title }) => {
             title
             description
             author
+            url
+          }
+        }
+        ogImageDefault: file(absolutePath: {regex: "/og-image/"}) {
+          childImageSharp {
+            fixed(height: 630, width: 1200) {
+              src
+            }
           }
         }
       }
@@ -26,7 +34,8 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const tabTitle = title === "Home" ? "Codebase" : title + " | Codebase"
+  const tabTitle = title === "Codebase" ? title : title + " | Codebase"
+  const ogImage = site.siteMetadata.url.concat(ogImageDefault.childImageSharp.fixed.src);
 
   return (
     <Helmet
@@ -53,6 +62,14 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
+        {
+          property: 'og:image',
+          content: ogImage,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -67,6 +84,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: 'twitter:image',
+          content: ogImage,
         },
       ].concat(meta)}
     />

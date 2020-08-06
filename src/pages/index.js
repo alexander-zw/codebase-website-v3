@@ -14,7 +14,7 @@ import HomeInvolved from "../components/home/home-involved"
 const IndexPage = ({ location }) => {
   return (
     <Layout theme={Theme.DEFAULT}>
-      <SEO title="Home" />
+      <SEO title="Codebase" />
       <HomeHeader />
       <HomeMission />
       <HomeExperiences />
