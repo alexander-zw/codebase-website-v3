@@ -6,6 +6,7 @@
   width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
+  overflow-x: auto;
 }
 
 @media only screen and (max-width: 479px) {
