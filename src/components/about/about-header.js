@@ -9,8 +9,8 @@ const AboutHeader = () => {
       <Container>
         <h1 className="cb-about-header-title">OUR MISSION</h1>
         <h1 className="cb-about-header-subtitle">
-          We strive to build a community where passionate and driven engineers
-          can grow together through meaningful industry initiatives.
+          We are a community of developers that empowers students to break into
+          the software industry.
         </h1>
         <a
           className="cb-about-header-button"

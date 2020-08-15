@@ -23,9 +23,11 @@ const HomeMission = () => {
             <h1 className="cb-section-title">ABOUT US</h1>
             <div className="cb-home-mission-section-header">
               <p className="cb-section-heading">
-                We are a software development club that strives to build a
-                community where passionate and driven engineers can grow
-                together through meaningful industry initiatives.
+                We are a community of developers that empowers students to break
+                into the software industry. We grow together through hands-on
+                technical projects and strive to provide all students with
+                resources to bridge the gap between academic and practical
+                knowledge.
               </p>
             </div>
             <Link className="cb-link-blue cb-home-mission-more" to="/about">

@@ -23,6 +23,7 @@ const ApplicationProcess = () => {
               Date
               Description
               Link
+              Link_Text
             }
           }
         }
@@ -46,7 +47,7 @@ const ApplicationProcess = () => {
   } = recruitmentData.control.edges[0].node.data
 
   const eventData = recruitmentData.events.edges.map((edge, index) => {
-    const { Name, Date, Description, Link } = edge.node.data
+    const { Name, Date, Description, Link, Link_Text } = edge.node.data
     return (
       <Col
         sm={12}
@@ -59,7 +60,7 @@ const ApplicationProcess = () => {
           <p className="cb-application-process-card-date">{Date}</p>
           <p className="cb-application-process-card-text">{Description}</p>
           <a className="cb-application-process-card-link" href={Link}>
-            Zoom Link
+            {Link_Text}
           </a>
         </div>
       </Col>

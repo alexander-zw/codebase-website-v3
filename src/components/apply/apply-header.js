@@ -14,6 +14,7 @@ const ApplyHeader = () => {
               Current_Semester
               Applications_Open
               Interest_Form_URL
+              Discord_URL
             }
           }
         }
@@ -25,6 +26,7 @@ const ApplyHeader = () => {
     Current_Semester,
     Applications_Open,
     Interest_Form_URL,
+    Discord_URL,
   } = currentRecruitment.allAirtable.edges[0].node.data
 
   return (
@@ -34,7 +36,7 @@ const ApplyHeader = () => {
         <h1 className="cb-apply-header-subtitle">Join Our Community</h1>
         {Applications_Open === "No" ? (
           <p className="cb-apply-header-text">
-            Applications are officially closed for this semester. We will be
+            Applications are officially closed at this moment. We will be
             recruiting again for {Current_Semester}. Sign up to be notified when
             apps are ready!
           </p>
@@ -48,6 +50,10 @@ const ApplyHeader = () => {
 
         <a className="cb-apply-header-button" href={Interest_Form_URL}>
           Fill out interest form →
+        </a>
+
+        <a className="cb-apply-header-button" href={Discord_URL}>
+          Join our virtual table Discord →
         </a>
       </Container>
     </div>

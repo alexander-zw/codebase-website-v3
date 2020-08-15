@@ -66,7 +66,8 @@ const ApplicationRequirements = () => {
                       coding experience.
                     </li>
                     <li>
-                      Completed a SWE internship or significant side project.
+                      Completed a significant coding project (side project or
+                      industry experience).
                     </li>
                   </ul>
                 </div>
