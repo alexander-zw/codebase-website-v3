@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
 
 import "../../styles/apply-header.css"
 
@@ -15,6 +16,7 @@ const ApplyHeader = () => {
               Applications_Open
               Interest_Form_URL
               Discord_URL
+              Blog_URL
             }
           }
         }
@@ -27,6 +29,7 @@ const ApplyHeader = () => {
     Applications_Open,
     Interest_Form_URL,
     Discord_URL,
+    Blog_URL,
   } = currentRecruitment.allAirtable.edges[0].node.data
 
   return (
@@ -43,18 +46,23 @@ const ApplyHeader = () => {
         ) : (
           <p className="cb-apply-header-text">
             Applications are open for the semester! We are looking for both
-            client and mentored developers. Sign up to be notified about
-            recruitment events!
+            client and mentored developers. Our application deadline is
+            September 5, at 3AM PT! Feel free to attend any of our recruitment
+            events below to learn more.
           </p>
         )}
 
-        <a className="cb-apply-header-button" href={Interest_Form_URL}>
-          Fill out interest form →
-        </a>
-
-        <a className="cb-apply-header-button" href={Discord_URL}>
-          Join our virtual table Discord →
-        </a>
+        <Row noGutters>
+          <a className="cb-apply-header-button" href={Interest_Form_URL}>
+            Fill out interest form →
+          </a>
+          <a className="cb-apply-header-button" href={Discord_URL}>
+            Join our virtual table Discord →
+          </a>
+          <a className="cb-apply-header-button" href={Blog_URL}>
+            Read about our semester plans →
+          </a>
+        </Row>
       </Container>
     </div>
   )

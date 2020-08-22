@@ -71,13 +71,13 @@ const ApplicationProcess = () => {
     <div className="cb-wrapper-gray" id="application-process">
       <Container>
         <div className="cb-application-process-header">
-          <h1 className="cb-section-heading">Application Process</h1>
+          <h1 className="cb-section-heading">Recruitment Timeline</h1>
           <p className="cb-section-text">
-            Below is the application process for {Current_Semester}. Click{" "}
+            Below is the recruitment timeline for {Current_Semester}. Click{" "}
             <a className="cb-application-process-link" href={GCal_Link}>
               here
             </a>{" "}
-            to add all of the events to your Google calendar!
+            to copy these events to your Google calendar!
           </p>
         </div>
       </Container>
