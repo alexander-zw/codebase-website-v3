@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -103,9 +103,12 @@ const CurrentProjects = ({ bg }) => {
           </p>
         </div>
 
-        <Link className="cb-link-blue" to="projects">
-          Learn more about our client projects →
-        </Link>
+        <a
+          className="cb-link-blue"
+          href="https://medium.com/berkeley-codebase/the-client-program-experience-5d90ee6b294e"
+        >
+          Read about the client experience →
+        </a>
 
         <Row className="cb-projects-card-row"> {clientCards} </Row>
 
@@ -122,7 +125,7 @@ const CurrentProjects = ({ bg }) => {
 
             <a
               className="cb-link-blue"
-              href="https://medium.com/berkeley-codebase/the-mentored-project-72db8aabb70e"
+              href="https://medium.com/berkeley-codebase/the-mentored-program-experience-4504e1f6393d"
             >
               Read about the mentored experience →
             </a>
