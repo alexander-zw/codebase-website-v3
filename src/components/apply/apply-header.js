@@ -56,12 +56,16 @@ const ApplyHeader = () => {
           <a className="cb-apply-header-button" href={Interest_Form_URL}>
             Fill out interest form →
           </a>
-          <a className="cb-apply-header-button" href={Discord_URL}>
-            Join our virtual table Discord →
-          </a>
-          <a className="cb-apply-header-button" href={Blog_URL}>
-            Read about our semester plans →
-          </a>
+          {Applications_Open === "No" && (
+            <span>
+              <a className="cb-apply-header-button" href={Discord_URL}>
+                Join our virtual table Discord →
+              </a>
+              <a className="cb-apply-header-button" href={Blog_URL}>
+                Read about our semester plans →
+              </a>
+            </span>
+          )}
         </Row>
       </Container>
     </div>

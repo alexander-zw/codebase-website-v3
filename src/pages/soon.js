@@ -40,10 +40,7 @@ const ComingSoonPage = () => {
           <h2 className="cb-section-heading">Coming Soon!</h2>
           <p className="cb-section-text" style={{ marginBottom: "60px" }}>
             Sorry about that! We're currently hard at work preparing this
-            resource and we'll try to make it available as soon as possible. In
-            the meantime, sign up for our interest form{" "}
-            <a href={Interest_Form_URL}>here</a> or{" "}
-            <Link to="/contact">contact us</Link>!
+            resource and we'll try to make it available as soon as possible.
           </p>
           <Img
             fluid={query.file.childImageSharp.fluid}
