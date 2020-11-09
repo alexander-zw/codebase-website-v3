@@ -89,6 +89,16 @@ const NavBar = ({ theme }) => {
                 </a>
               </Nav.Item>
               <Nav.Item className="cb-nav-bar-item">
+                <a
+                  className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
+                    theme
+                  )}`}
+                  href="https://www.notion.so/berkeleycodebase/Codebase-Public-4fa3c7bcd749416392624391e91c279e"
+                >
+                  Resources
+                </a>
+              </Nav.Item>
+              <Nav.Item className="cb-nav-bar-item">
                 <Link
                   className={`nav-link cb-nav-bar-nav-link ${getLinkClass(
                     theme
