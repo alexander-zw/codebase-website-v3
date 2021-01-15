@@ -15,7 +15,7 @@ const ApplyPage = ({ location }) => {
       <SEO title="Apply" />
       <ApplyHeader />
       <ApplicationRequirements />
-      {/* <ApplicationProcess /> */}
+      <ApplicationProcess />
       <StudentFAQ />
     </Layout>
   )

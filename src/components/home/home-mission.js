@@ -81,7 +81,7 @@ const HomeMission = () => {
               >
                 <CountUp
                   start={0}
-                  end={didViewCountUp ? 34 : 0}
+                  end={didViewCountUp ? 39 : 0}
                   duration={2.75}
                   useEasing={true}
                 />
