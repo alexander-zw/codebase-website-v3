@@ -57,14 +57,14 @@ const ApplyHeader = () => {
             Fill out interest form →
           </a>
           {Applications_Open === "Yes" && (
-            <span>
+            <>
               <a className="cb-apply-header-button" href={Discord_URL}>
                 Join our virtual table Discord →
               </a>
               <a className="cb-apply-header-button" href={Blog_URL}>
                 Read about our semester plans →
               </a>
-            </span>
+            </>
           )}
         </Row>
       </Container>

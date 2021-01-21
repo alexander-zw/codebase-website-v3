@@ -69,6 +69,9 @@ const ApplicationRequirements = () => {
                       Completed a significant coding project (side project or
                       industry experience).
                     </li>
+                    <li>
+                      Python knowledge (required for technical interview).
+                    </li>
                   </ul>
                 </div>
                 <div className="cb-application-requirements-button-container">
